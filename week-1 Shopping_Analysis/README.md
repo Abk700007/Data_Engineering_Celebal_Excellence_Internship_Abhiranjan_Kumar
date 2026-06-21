@@ -1,217 +1,44 @@
-# Shopping Dataset Analysis using Python and Pandas
+# Shopping Dataset Analysis
 
-## Project Overview
+This repository contains the analysis and cleaning of a shopping products dataset using Python and Pandas.
 
-This project focuses on performing data exploration, cleaning, feature engineering, and exploratory data analysis (EDA) on a shopping products dataset using Python and Pandas.
+## Analysis Workflow
 
-The objective of this analysis is to understand product pricing, customer ratings, discounts, category distribution, and product popularity while applying fundamental data analysis techniques used in real-world data engineering and analytics workflows.
+The analysis is documented in the [analysis.ipynb](file:///d:/Users/LENOVO/Desktop/Jupyter%20notebook%20programs/week-1%20Shopping_Analysis/notebook/analysis.ipynb) notebook and covers the following stages:
 
----
+### 1. Data Loading & Initial Exploration
+* Loaded the raw dataset (`combined_dataset.csv`) containing 1,000 products and 24 attributes.
+* Checked dataset dimensions, columns, data types, and initial summary statistics.
 
-## Dataset
+### 2. Data Cleaning
+* **Currency/Numeric Conversion**: Stripped currency symbols (`₹`), commas, and quotes from the `final_price` column and converted it to float.
+* **Missing Value Imputation**:
+  * Imputed missing numeric values (e.g., `discount`) using their column mean.
+  * Imputed missing categorical values (e.g., `seller_name`, `what_customers_said`) with `"Unknown"`.
+* **Deduplication**: Checked and removed duplicate records.
+* **Output**: Saved the resulting cleaned dataset as `cleaned_dataset.csv` in the root folder.
 
-Dataset Used: `combined_dataset.csv`
+### 3. Feature Engineering
+Created new columns to enhance the analysis:
+* `quantity`: Since quantity was not provided in the original dataset, a default quantity of `10` was assumed for the calculations.
+* `total_amount`: Total value of the initial inventory (`initial_price * quantity`).
+* `price_difference`: Absolute discount value in currency (`initial_price - final_price`).
+* `popularity_score`: A composite metric of customer engagement (`rating * ratings_count`).
 
-The dataset contains product-level information including:
-
-* Product ID
-* Product Title
-* Product Description
-* Ratings
-* Ratings Count
-* Initial Price
-* Final Price
-* Discounts
-* Product Category
-* Seller Information
-* Product Specifications
-* Customer Reviews
-* Additional Product Metadata
-
----
-
-## Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Jupyter Notebook
+### 4. Exploratory Data Analysis (EDA)
+* **Univariate Analysis**:
+  * Plotted the distribution of product ratings (mean: ~3.62, median: 4.1).
+  * Analyzed the distribution of initial prices (mean: ~₹2723, median: ₹1999).
+* **Bivariate Analysis**:
+  * Plotted the relationship between customer rating and popularity score.
+  * Investigated the relationship between initial price and rating (showing no strong correlation).
+* **Category-Level Analysis**:
+  * Identified the top product categories, dominated by `tops` (122), `dresses` (100), and `shirts` (97).
+* **Outlier Detection**:
+  * Used a boxplot on `initial_price` to identify high-priced premium outlier products (prices extending up to ₹22,199).
 
 ---
 
-## Project Workflow
+## Brief Summary
 
-### 1. Data Loading
-
-* Loaded the dataset into a Pandas DataFrame.
-* Examined dataset dimensions and column structure.
-
-### 2. Data Understanding
-
-* Inspected data types.
-* Analyzed missing values.
-* Generated summary statistics using `.info()` and `.describe()`.
-
-### 3. Data Cleaning
-
-* Converted price-related columns into numeric format.
-* Handled missing values using appropriate fill strategies.
-* Checked and removed duplicate records.
-* Saved the cleaned dataset for further analysis.
-
-### 4. Feature Engineering
-
-Created additional features to improve analysis:
-
-#### Price Difference
-
-Measures the difference between the initial product price and the final selling price.
-
-```python
-price_difference = initial_price - final_price
-```
-
-#### Popularity Score
-
-Measures product popularity using customer ratings and rating count.
-
-```python
-popularity_score = rating * ratings_count
-```
-
-#### Total Amount
-
-Created a derived column using price and quantity.
-
-```python
-total_amount = price * quantity
-```
-
----
-
-## Exploratory Data Analysis
-
-### Univariate Analysis
-
-Performed analysis on individual variables:
-
-* Product Ratings
-* Product Prices
-* Discount Distribution
-
-Visualizations:
-
-* Histogram of Ratings
-* Histogram of Initial Prices
-
-### Bivariate Analysis
-
-Analyzed relationships between variables:
-
-* Rating vs Popularity Score
-* Initial Price vs Rating
-
-Visualizations:
-
-* Scatter Plots
-
-### Category-Level Analysis
-
-Analyzed product distribution across categories.
-
-Visualizations:
-
-* Bar Chart of Top Product Categories
-
-### Outlier Detection
-
-Analyzed pricing outliers using:
-
-* Boxplot of Initial Product Prices
-
----
-
-# Key Insights
-
-### Customer Ratings
-
-* Most products have ratings between 3.5 and 4.5.
-* The average product rating is approximately 3.62.
-* Customer feedback is generally positive across the dataset.
-
-### Product Pricing
-
-* The average product price is approximately ₹2723.
-* The median product price is ₹1999.
-* Most products belong to the affordable to mid-range pricing segment.
-
-### Discounts
-
-* A large number of products are sold at discounted prices.
-* The average discount amount is approximately ₹1017.
-* Some products receive very high discounts, indicating aggressive promotional strategies.
-
-### Product Categories
-
-* Tops, Dresses, and Shirts are the most represented categories.
-* Apparel-related products dominate the dataset.
-
-### Popularity
-
-* Higher-rated products generally show higher popularity scores.
-* A small number of products account for a significant share of customer engagement.
-
-### Outliers
-
-* Several premium-priced products were identified as outliers.
-* These products significantly extend the upper range of the pricing distribution.
-
----
-
-# Business Implications
-
-### Product Promotion
-
-Products with consistently high ratings can be prioritized in recommendation systems and marketing campaigns to improve customer engagement.
-
-### Category Strategy
-
-Categories such as Tops, Dresses, and Shirts represent major inventory segments and may require focused marketing and inventory planning.
-
-### Pricing Strategy
-
-The presence of substantial discounts suggests that promotional pricing plays an important role in attracting customers and driving sales.
-
-### Customer Satisfaction
-
-Since higher prices do not necessarily result in higher ratings, businesses should focus on product quality, customer experience, and value delivery rather than pricing alone.
-
-### Inventory Management
-
-Popularity metrics can help identify high-performing products and support data-driven inventory and demand planning decisions.
-
----
-
-## Repository Structure
-
-```text
-week-1 Shopping_Analysis/
-│
-├── data/
-│   └── combined_dataset.csv
-│
-├── notebook/
-│   └── analysis.ipynb
-│
-├── cleaned_dataset.csv
-│
-└── README.md
-```
-
----
-
-## Conclusion
-
-This project demonstrates the use of Python, Pandas, and data visualization libraries to perform end-to-end data exploration, cleaning, feature engineering, and business-oriented analysis on a real-world shopping dataset. The insights generated from this analysis can support better decision-making in pricing, marketing, inventory planning, and customer engagement strategies.
+In this project, a shopping dataset of 1,000 items was cleaned by formatting price columns, handling missing values, and deduplicating rows. Four engineered features (`quantity`, `total_amount`, `price_difference`, and `popularity_score`) were created to analyze pricing and popularity. Since quantity was not originally provided, a value of 10 was assumed for each product. Exploratory data analysis revealed that apparel categories (Tops, Dresses, Shirts) dominate the dataset, customer ratings are generally positive (averaging 3.62), and product price does not correlate strongly with customer rating.
