@@ -1,6 +1,6 @@
 # Data Engineering - Celebal Excellence Internship
 
-Welcome to the repository for the Data Engineering track of the **Celebal Excellence Internship**. This repository serves as a portfolio of assessments, projects, and tasks completed during the 8-week internship program.
+Welcome to My repository for the Data Engineering track of the **Celebal Excellence Internship**. This repository serves as a portfolio of assessments, projects, and tasks completed during the 8-week internship program.
 
 ---
 
