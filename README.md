@@ -64,6 +64,5 @@ To run the notebooks and scripts locally, ensure you have the following installe
 
 ## License & Internship Info
 * **Intern**: Abhiranjan Kumar
-* **Email**: abk700007@gmail.com
 * **Organization**: Celebal Technologies (Celebal Excellence Internship)
 * **Track**: Data Engineering
