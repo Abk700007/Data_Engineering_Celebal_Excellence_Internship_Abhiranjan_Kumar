@@ -64,5 +64,6 @@ To run the notebooks and scripts locally, ensure you have the following installe
 
 ## License & Internship Info
 * **Intern**: Abhiranjan Kumar
+* **Institution**:ITER(SOA University)
 * **Organization**: Celebal Technologies (Celebal Excellence Internship)
 * **Track**: Data Engineering
