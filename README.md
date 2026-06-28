@@ -11,7 +11,7 @@ The internship is structured around weekly assessments covering different facets
 | Week | Assessment / Topic | Status | Description |
 |---|---|---|---|
 | **Week 1** | [Week 1 - Shopping Analysis](file:///d:/Users/LENOVO/Desktop/Jupyter%20notebook%20programs/week-1%20Shopping_Analysis/) | Completed | Exploratory Data Analysis, Data Cleaning, and Feature Engineering on a shopping products dataset. |
-| **Week 2** | *To be updated* | Upcoming | Week 2 assessment task. |
+| **Week 2** | [Week 2 - E-Commerce Sales Database](./week-2%20-%20E-Commerce%20Sales%20Database/) | Completed | Relational Database setup, custom CHECK constraints, performance indexing, SQL queries (A-E), and transactional consistency checks. |
 | **Week 3** | *To be updated* | Upcoming | Week 3 assessment task. |
 | **Week 4** | *To be updated* | Upcoming | Week 4 assessment task. |
 | **Week 5** | *To be updated* | Upcoming | Week 5 assessment task. |
@@ -33,6 +33,20 @@ The files and weekly assessment directories are structured as follows:
 │   ├── notebook/
 │   │   └── analysis.ipynb
 │   ├── cleaned_dataset.csv
+│   └── README.md
+│
+├── week-2 - E-Commerce Sales Database/
+│   ├── database/
+│   │   ├── create_database.sql
+│   │   ├── create_tables.sql
+│   │   ├── create_indexes.sql
+│   │   └── insert_data.sql
+│   ├── validation/
+│   │   └── validate_data.sql
+│   ├── Section_A/ to Section_E/
+│   │   └── basic_queries.sql, filtering_queries.sql, etc.
+│   ├── results/
+│   │   └── Section_A_results.txt to Section_E_results.txt
 │   └── README.md
 │
 └── README.md (Root)
