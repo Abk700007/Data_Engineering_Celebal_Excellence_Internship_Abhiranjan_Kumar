@@ -1,0 +1,74 @@
+================================================================================
+SECTION D - QUERY RESULTS
+================================================================================
+
+--------------------------------------------------------------------------------
+Q19. SELECT o.order_id, o.order_date, c.first_name, c.last_name, o.total_amount
+     FROM orders o INNER JOIN customers c ON o.customer_id = c.customer_id;
+--------------------------------------------------------------------------------
++----------+------------+------------+-----------+--------------+
+| order_id | order_date | first_name | last_name | total_amount |
++----------+------------+------------+-----------+--------------+
+|     1001 | 2024-08-01 | Aarav      | Sharma    |      4498.00 |
+|     1002 | 2024-08-03 | Priya      | Patel     |       799.00 |
+|     1003 | 2024-08-05 | Rohan      | Gupta     |      7498.00 |
+|     1004 | 2024-08-10 | Aarav      | Sharma    |      3499.00 |
+|     1005 | 2024-08-12 | Sneha      | Reddy     |      2999.00 |
+|     1006 | 2024-08-15 | Vikram     | Singh     |      5898.00 |
+|     1007 | 2024-08-18 | Ananya     | Iyer      |      1299.00 |
+|     1008 | 2024-08-20 | Rohan      | Gupta     |       899.00 |
+|     1009 | 2024-08-25 | Karan      | Mehta     |      6098.00 |
+|     1010 | 2024-08-28 | Divya      | Nair      |      1598.00 |
++----------+------------+------------+-----------+--------------+
+
+--------------------------------------------------------------------------------
+Q20. SELECT c.customer_id, c.first_name, c.last_name, c.city, o.order_id, o.order_date, o.status, o.total_amount
+     FROM customers c LEFT JOIN orders o ON c.customer_id = o.customer_id;
+--------------------------------------------------------------------------------
++-------------+------------+-----------+-----------+----------+------------+-----------+--------------+
+| customer_id | first_name | last_name | city      | order_id | order_date | status    | total_amount |
++-------------+------------+-----------+-----------+----------+------------+-----------+--------------+
+|         101 | Aarav      | Sharma    | Mumbai    |     1001 | 2024-08-01 | Delivered |      4498.00 |
+|         101 | Aarav      | Sharma    | Mumbai    |     1004 | 2024-08-10 | Delivered |      3499.00 |
+|         102 | Priya      | Patel     | Ahmedabad |     1002 | 2024-08-03 | Delivered |       799.00 |
+|         103 | Rohan      | Gupta     | Delhi     |     1003 | 2024-08-05 | Shipped   |      7498.00 |
+|         103 | Rohan      | Gupta     | Delhi     |     1008 | 2024-08-20 | Delivered |       899.00 |
+|         104 | Sneha      | Reddy     | Hyderabad |     1005 | 2024-08-12 | Cancelled |      2999.00 |
+|         105 | Vikram     | Singh     | Jaipur    |     1006 | 2024-08-15 | Delivered |      5898.00 |
+|         106 | Ananya     | Iyer      | Chennai   |     1007 | 2024-08-18 | Pending   |      1299.00 |
+|         107 | Karan      | Mehta     | Pune      |     1009 | 2024-08-25 | Shipped   |      6098.00 |
+|         108 | Divya      | Nair      | Kochi     |     1010 | 2024-08-28 | Delivered |      1598.00 |
++-------------+------------+-----------+-----------+----------+------------+-----------+--------------+
+
+--------------------------------------------------------------------------------
+Q21. SELECT o.order_id, p.product_name, oi.quantity, oi.unit_price, oi.discount_pct
+     FROM orders o INNER JOIN order_items oi ON o.order_id = oi.order_id
+     INNER JOIN products p ON oi.product_id = p.product_id;
+--------------------------------------------------------------------------------
++----------+----------------------+----------+-------------+--------------+
+| order_id | product_name         | quantity |  unit_price | discount_pct |
++----------+----------------------+----------+-------------+--------------+
+|     1001 | Wireless Earbuds     |        2 |     1499.00 |         0.00 |
+|     1001 | Laptop Stand         |        1 |      899.00 |        10.00 |
+|     1002 | Cotton T-Shirt       |        1 |      799.00 |         0.00 |
+|     1003 | Smart Watch          |        1 |     2999.00 |         0.00 |
+|     1003 | Running Shoes        |        1 |     4599.00 |         5.00 |
+|     1004 | Bluetooth Speaker    |        1 |     3499.00 |         0.00 |
+|     1005 | Smart Watch          |        1 |     2999.00 |         0.00 |
+|     1006 | Wireless Earbuds     |        1 |     1499.00 |        10.00 |
+|     1006 | Running Shoes        |        1 |     4599.00 |         5.00 |
+|     1007 | Bedsheet Set         |        1 |     1299.00 |         0.00 |
+|     1008 | Laptop Stand         |        1 |      899.00 |         0.00 |
+|     1009 | Bluetooth Speaker    |        1 |     3499.00 |         0.00 |
+|     1009 | Cushion Covers (Set) |        2 |      599.00 |        15.00 |
+|     1010 | Bedsheet Set         |        1 |     1299.00 |         0.00 |
+|     1010 | Cushion Covers (Set) |        1 |      599.00 |         0.00 |
++----------+----------------------+----------+-------------+--------------+
+
+--------------------------------------------------------------------------------
+Q23. INSERT INTO orders (order_id, customer_id, order_date, status, total_amount)
+     VALUES (1011, 999, '2026-06-29', 'Pending', 1598.00);
+--------------------------------------------------------------------------------
+Result:
+Error: FOREIGN KEY constraint failed
+(Insertion blocked successfully because customer_id 999 does not exist in customers table)
