@@ -12,7 +12,7 @@ The internship is structured around weekly assessments covering different facets
 |---|---|---|---|
 | **Week 1** | [Week 1 - Shopping Analysis](file:///d:/Users/LENOVO/Desktop/Jupyter%20notebook%20programs/week-1%20Shopping_Analysis/) | Completed | Exploratory Data Analysis, Data Cleaning, and Feature Engineering on a shopping products dataset. |
 | **Week 2** | [Week 2 - E-Commerce Sales Database](./week-2%20-%20E-Commerce%20Sales%20Database/) | Completed | Relational Database setup, custom CHECK constraints, performance indexing, SQL queries (A-E), and transactional consistency checks. |
-| **Week 3** | *To be updated* | Upcoming | Week 3 assessment task. |
+| **Week 3** | [Week 3 - Superstore dataset analysis](./week-3%20Superstore%20dataset%20analysis%20using%20subqueries,%20CTEs%20and%20Window%20Function/customer-sales-insights/) | Completed | Database normalization, Advanced Queries, Subqueries, CTEs, Window Functions, and Customer Sales Insights Mini-Project. |
 | **Week 4** | *To be updated* | Upcoming | Week 4 assessment task. |
 | **Week 5** | *To be updated* | Upcoming | Week 5 assessment task. |
 | **Week 6** | *To be updated* | Upcoming | Week 6 assessment task. |
@@ -48,6 +48,22 @@ The files and weekly assessment directories are structured as follows:
 │   ├── results/
 │   │   └── Section_A_results.txt to Section_E_results.txt
 │   └── README.md
+│
+├── week-3 Superstore dataset analysis using subqueries, CTEs and Window Function/
+│   └── customer-sales-insights/
+│       ├── data/
+│       │   ├── Sample - Superstore.csv
+│       │   ├── superstore.db
+│       │   └── verify_db.py
+│       ├── sql/
+│       │   ├── create_tables.sql
+│       │   ├── insert_data.sql
+│       │   └── advanced_queries.sql
+│       ├── mini project/
+│       │   └── mini_project.sql
+│       ├── results/
+│       │   └── result.sql
+│       └── README.md
 │
 └── README.md (Root)
 ```
