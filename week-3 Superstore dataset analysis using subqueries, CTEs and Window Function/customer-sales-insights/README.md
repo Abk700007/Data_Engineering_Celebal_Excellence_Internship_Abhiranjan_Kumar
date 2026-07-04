@@ -50,8 +50,7 @@ The resolved database queries yield the following executive findings on customer
 customer-sales-insights/
 ├── data/
 │   ├── Sample - Superstore.csv   # Raw dataset
-│   ├── superstore.db             # Generated SQLite database
-│   └── verify_db.py              # Python automation pipeline script
+│   └── superstore.db             # Ingested SQLite database
 ├── sql/
 │   ├── create_tables.sql         # Resolved DDL schemas for database and tables
 │   ├── insert_data.sql           # Resolved DML operations for ingestion & validation
@@ -66,13 +65,7 @@ customer-sales-insights/
 ---
 
 ## Getting Started
-1. **Automated Pipeline Execution**:
-   - Run the python verification pipeline:
-     ```bash
-     python "data/verify_db.py"
-     ```
-   - This script will automatically create `data/superstore.db`, load the `Sample - Superstore.csv` dataset, apply all DDL/DML transformations, and output the executed query results to `results/result.sql` and `mini project/mini_project.sql`.
-2. **DDL Schemas**: Run [create_tables.sql](file:///d:/Users/LENOVO/Desktop/Celebal/week%203-%20superstore%20data%20analysis%20using%20subqueries,CTE%20and%20window%20functions/customer-sales-insights/sql/create_tables.sql) to define schemas manually.
-3. **Data Populating**: Run [insert_data.sql](file:///d:/Users/LENOVO/Desktop/Celebal/week%203-%20superstore%20data%20analysis%20using%20subqueries,CTE%20and%20window%20functions/customer-sales-insights/sql/insert_data.sql) to clean and insert row-records into destination tables.
-4. **Assignment Queries**: Open [advanced_queries.sql](file:///d:/Users/LENOVO/Desktop/Celebal/week%203-%20superstore%20data%20analysis%20using%20subqueries,CTE%20and%20window%20functions/customer-sales-insights/sql/advanced_queries.sql) to review and execute the analytical queries.
-5. **Results & Insights**: Review the parsed outputs inside [result.sql](file:///d:/Users/LENOVO/Desktop/Celebal/week%203-%20superstore%20data%20analysis%20using%20subqueries,CTE%20and%20window%20functions/customer-sales-insights/results/result.sql) and [mini_project.sql](file:///d:/Users/LENOVO/Desktop/Celebal/week%203-%20superstore%20data%20analysis%20using%20subqueries,CTE%20and%20window%20functions/customer-sales-insights/mini%20project/mini_project.sql).
+1. **DDL Schemas**: Run [create_tables.sql](file:///d:/Users/LENOVO/Desktop/Celebal/week%203-%20superstore%20data%20analysis%20using%20subqueries,CTE%20and%20window%20functions/customer-sales-insights/sql/create_tables.sql) to define schemas manually.
+2. **Data Populating**: Run [insert_data.sql](file:///d:/Users/LENOVO/Desktop/Celebal/week%203-%20superstore%20data%20analysis%20using%20subqueries,CTE%20and%20window%20functions/customer-sales-insights/sql/insert_data.sql) to clean and insert row-records into destination tables.
+3. **Assignment Queries**: Open [advanced_queries.sql](file:///d:/Users/LENOVO/Desktop/Celebal/week%203-%20superstore%20data%20analysis%20using%20subqueries,CTE%20and%20window%20functions/customer-sales-insights/sql/advanced_queries.sql) to review and execute the analytical queries.
+4. **Results & Insights**: Review the parsed outputs inside [result.sql](file:///d:/Users/LENOVO/Desktop/Celebal/week%203-%20superstore%20data%20analysis%20using%20subqueries,CTE%20and%20window%20functions/customer-sales-insights/results/result.sql) and [mini_project.sql](file:///d:/Users/LENOVO/Desktop/Celebal/week%203-%20superstore%20data%20analysis%20using%20subqueries,CTE%20and%20window%20functions/customer-sales-insights/mini%20project/mini_project.sql).
