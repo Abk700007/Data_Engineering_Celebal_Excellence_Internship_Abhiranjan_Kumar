@@ -53,8 +53,8 @@ The files and weekly assessment directories are structured as follows:
 │   └── customer-sales-insights/
 │       ├── data/
 │       │   ├── Sample - Superstore.csv
-│       │   ├── superstore.db
-│       │   └── verify_db.py
+│       │   └── superstore.db
+│       │   
 │       ├── sql/
 │       │   ├── create_tables.sql
 │       │   ├── insert_data.sql
