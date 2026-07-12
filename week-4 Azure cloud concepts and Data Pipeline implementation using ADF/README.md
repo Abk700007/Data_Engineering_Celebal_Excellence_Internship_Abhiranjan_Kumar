@@ -1,7 +1,7 @@
 # Week 4: Azure Cloud Fundamentals and Data Pipeline Implementation using Azure Data Factory (ADF)
 
 ## 📌 Project Overview
-The goal of Week 4 was to understand and implement automated data movement in the cloud using Azure services. Unlike Weeks 1–3, which focused on localized analysis with Python and SQL, Week 4 shifted focus toward cloud architecture and building an end-to-end automated data pipeline.
+The goal of Week 4 was to understand and implement automated data movement in the cloud using Azure services. Week 4 shifted focus toward cloud architecture and building an end-to-end automated data pipeline.
 
 An automated data pipeline collects, validates, moves, and transforms data between services without manual intervention. This project implements a classic e-commerce data pipeline flow where transaction details are uploaded, validated, and processed safely.
 
