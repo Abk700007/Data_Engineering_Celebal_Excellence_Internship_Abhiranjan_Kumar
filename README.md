@@ -14,7 +14,7 @@ The internship is structured around weekly assessments covering different facets
 | **Week 2** | [Week 2 - E-Commerce Sales Database](./week-2%20-%20E-Commerce%20Sales%20Database/) | Completed | Relational Database setup, custom CHECK constraints, performance indexing, SQL queries (A-E), and transactional consistency checks. |
 | **Week 3** | [Week 3 - Superstore dataset analysis](./week-3%20Superstore%20dataset%20analysis%20using%20subqueries,%20CTEs%20and%20Window%20Function/customer-sales-insights/) | Completed | Database normalization, Advanced Queries, Subqueries, CTEs, Window Functions, and Customer Sales Insights Mini-Project. |
 | **Week 4** | [Week 4 - Azure Cloud and ADF Pipeline](./week-4%20Azure%20cloud%20concepts%20and%20Data%20Pipeline%20implementation%20using%20ADF/) | Completed | Azure cloud fundamentals, Storage accounts, Blob containers, ADF Pipelines, Linked Services, Datasets, activities (Get Metadata, Copy Data), Fault Tolerance, and RBAC Managed Identity configuration. |
-| **Week 5** | *To be updated* | Upcoming | Week 5 assessment task. |
+| **Week 5** | [Week 5 - Spark fundamentals and Data cleaning pipeline](./week-5%20Spark%20fundamentals%20and%20Data%20cleaning%20pipeline%20using%20DataFrames/) | Completed | PySpark pipeline for data cleaning, transformation, and aggregation on customer sales data. |
 | **Week 6** | *To be updated* | Upcoming | Week 6 assessment task. |
 | **Week 7** | *To be updated* | Upcoming | Week 7 assessment task. |
 | **Week 8** | *To be updated* | Upcoming | Week 8 assessment task. |
@@ -94,6 +94,16 @@ The files and weekly assessment directories are structured as follows:
 │   │   ├── Pipeline_Execution_Success.png
 │   │   └── Destination_output.png
 │   └── README.md
+│
+├── week-5 Spark fundamentals and Data cleaning pipeline using DataFrames/
+│   ├── Data/
+│   │   └── dataset.csv
+│   ├── Notebook/
+│   │   └── spark_basics.ipynb
+│   ├── Output/
+│   │   └── results.csv
+│   ├── week-5_assignment_answers.docx
+│   └── Readme.md
 │
 └── README.md (Root)
 ```

@@ -1,0 +1,316 @@
+customer_id,name,age,category,region,sales_amount,join_date
+1233,Customer_234,56.0,Clothing,North,206.13,2025-04-28
+1269,Customer_270,22.0,clothing,south,357.42,2024-11-11
+1030,Customer_31, 24 ,ELECTRONICS,North,73.89,2024-02-08
+1037,Customer_38,25.0,Clothing,SOUTH,224.77,2025-06-10
+1168,Customer_169,29.0,clothing,East,122.2,2024-06-18
+1070,Customer_71,36.0,Electronics,East,392.58,2023-09-07
+1171,Customer_172,54.0,Clothing,west,274.45,2025-05-18
+1088,Customer_89,40.0,Toys,South,102.34,2024-04-27
+1280,Customer_281,61.0,clothing,SOUTH,137.22,2023-05-24
+1066,Customer_67,42.0,clothing,west,97.27,2024-06-09
+1155,Customer_156,30.0,toys,North,147.55,2024-09-18
+1090,Customer_91,59.0,Furniture,central,9.78,2023-08-31
+1084,Customer_85,43.0,,North,86.87,2023-11-08
+1094,Customer_95,38.0,Clothing,East,220.39,2023-04-02
+1097,Customer_98,46.0,toys,central,98.47,2024-09-28
+1174,Customer_175,33.0,Electronics,Central,176.41,2023-01-17
+1114,Customer_115,24.0,electronics,East,181.14,2025-01-25
+1159,Customer_160,63.0,toys,Central,197.47,2024-06-17
+1290,Customer_291,46.0,clothing,East,718.06,2024-04-06
+1173,Customer_174, 21 ,Grocery,north,386.35,2025-05-21
+1174,Customer_175, 33 ,Electronics,Central,176.41,2023-01-17
+1234,Customer_235,43.0,Clothing,East,505.33,2023-12-18
+1073,Customer_74,,Furniture,Central,639.05,2025-02-18
+1222,Customer_223, 30 ,grocery,north,226.43,2023-09-05
+1111,Customer_112,16.0,GROCERY,central,532.82,2025-05-02
+1239,Customer_240,16.0,clothing,central,205.65,2024-11-30
+1145,Customer_146,39.0,Clothing,SOUTH,136.59,2023-04-19
+1015,Customer_16,50.0,Furniture,Central,804.78,2025-04-28
+1003,Customer_4,58.0,GROCERY,SOUTH,167.02,2024-04-07
+1113,Customer_114,29.0,Furniture,central,477.07,2023-03-11
+1253,Customer_254,29.0,ELECTRONICS,Central,188.48,2024-11-02
+1199,Customer_200,62.0,Grocery,North,344.99,2024-03-07
+1060,Customer_61,17.0,Toys,West,244.69,2024-12-04
+1091,Customer_92,23.0,toys,,114.79,2023-04-18
+1074,Customer_75, 42 ,Toys,north,73.62,2025-05-22
+1014,Customer_15,40.0,clothing,West,182.94,2024-05-21
+1127,Customer_128,,Clothing,,367.33,2025-03-30
+1232,Customer_233,33.0,Electronics,west,143.24,2023-12-09
+1163,Customer_164, 44 ,GROCERY,south,127.25,2023-01-02
+1294,Customer_295,27.0,Furniture,East,249.94,2023-12-09
+1273,Customer_274,42.0,clothing,SOUTH,346.44,2023-03-11
+1102,Customer_103,46.0,GROCERY,north,287.36,2024-12-20
+1284,Customer_285,16.0,Clothing,,370.6,2025-03-20
+1002,Customer_3,58.0,clothing,West,545.62,2023-01-21
+1148,Customer_149,46.0,grocery,south,174.53,2023-01-09
+1288,Customer_289,44.0,Electronics,Central,327.74,2024-09-29
+1099,Customer_100,52.0,Clothing,south,123.28,2024-09-05
+1279,Customer_280,45.0,Grocery,central,128.3,2024-03-10
+1126,Customer_127,34.0,Clothing,East,76.83,2023-03-20
+1132,Customer_133,16.0,Clothing,central,298.26,2024-08-09
+1080,Customer_81,31.0,Toys,SOUTH,151.52,2023-11-12
+1042,Customer_43,31.0,toys,south,420.58,2024-04-15
+1170,Customer_171,53.0,clothing,South,214.1,2023-09-26
+1184,Customer_185,28.0,grocery,,157.26,2023-10-24
+1139,Customer_140,24.0,Electronics,East,810.95,2023-03-11
+1101,Customer_102,47.0,toys,west,178.44,2023-07-04
+1188,Customer_189,36.0,Furniture,central,368.2,2024-05-03
+1231,Customer_232,28.0,Furniture,North,245.41,2024-12-10
+1177,Customer_178,42.0,Toys,SOUTH,684.22,2025-05-27
+1065,Customer_66,37.0,grocery,SOUTH,81.42,2024-02-26
+1081,Customer_82,41.0,clothing,East,137.61,2024-02-10
+1057,Customer_58,49.0,toys,North,354.35,2025-03-23
+1206,Customer_207,16.0,ELECTRONICS,west,87.42,2024-12-28
+1293,Customer_294,-5.0,Furniture,west,190.69,2024-04-29
+1086,Customer_87,36.0,toys,west,78.67,2023-11-24
+1018,Customer_19,0.0,Electronics,North,158.09,2023-01-07
+1089,Customer_90,43.0,clothing,South,101.42,2024-11-05
+1176,Customer_177,,Furniture,west,46.78,2024-08-09
+1246,Customer_247,57.0,clothing,East,146.21,2024-09-04
+1055,Customer_56,49.0,Toys,central,314.26,2023-06-09
+1129,Customer_130,32.0,Toys,north,282.47,2024-12-02
+1227,Customer_228,18.0,Clothing,West,172.11,2023-12-07
+1207,Customer_208,56.0,Clothing,North,162.18,2024-05-05
+1276,Customer_277,35.0,electronics,Central,649.3,2023-04-17
+1245,Customer_246,54.0,Toys,East,154.85,2024-11-23
+1125,Customer_126,39.0,GROCERY,central,180.48,2024-08-10
+1022,Customer_23,48.0,toys,south,69.52,2023-08-02
+1118,Customer_119,52.0,grocery,North,110.16,2023-07-18
+1217,Customer_218,44.0,,west,14.0,2023-01-03
+1210,Customer_211,31.0,Grocery,south,196.93,2023-12-09
+1287,Customer_288,29.0,Electronics,West,573.49,2024-09-07
+1295,Customer_296,27.0,Grocery,East,128.93,2023-11-18
+1122,Customer_123,,GROCERY,south,1021.12,2024-11-19
+1274,Customer_275,30.0,toys,south,298.54,2023-12-03
+1202,Customer_203,29.0,Clothing,North,667.2,2023-06-09
+1250,Customer_251,44.0,Furniture,central,182.47,2023-04-02
+1265,Customer_266,41.0,Furniture,central,809.96,2023-09-25
+1267,Customer_268,50.0,clothing,north,169.33,2023-07-03
+1115,Customer_116, 16 ,Electronics,East,542.86,2023-10-29
+1108,Customer_109,47.0,Toys,north,89.63,2024-11-10
+1293,Customer_294,-5.0,Furniture,west,190.69,2024-04-29
+1299,Customer_300,,Grocery,west,106.29,2024-12-24
+1024,Customer_25,61.0,grocery,Central,368.16,2024-04-05
+1104,Customer_105,45.0,Clothing,SOUTH,249.37,2024-04-30
+1262,Customer_263,53.0,Clothing,central,453.11,2024-11-29
+1161,Customer_162,46.0,Furniture,North,269.65,2024-09-19
+1062,Customer_63,43.0,GROCERY,SOUTH,124.76,2023-04-02
+1283,Customer_284,37.0,Clothing,central,105.14,2023-02-26
+1078,Customer_79,59.0,clothing,south,218.46,2025-02-05
+1266,Customer_267,,GROCERY,central,255.36,2023-05-25
+1050,Customer_51,80.0,toys,SOUTH,213.32,2024-07-08
+1138,Customer_139, 33 ,Toys,South,239.97,2024-10-17
+1230,Customer_231,22.0,ELECTRONICS,,154.88,2025-04-14
+1263,Customer_264,36.0,Furniture,East,429.76,2024-04-30
+1150,Customer_151,60.0,electronics,North,129.44,2023-04-10
+1052,Customer_53,44.0,Electronics,Central,432.72,2024-08-09
+1264,Customer_265,26.0,toys,South,120.47,2024-03-15
+1061,Customer_62, 39 ,Toys,south,112.37,2025-03-09
+1225,Customer_226,16.0,Furniture,Central,558.5,2023-11-06
+1238,Customer_239,42.0,Furniture,north,182.62,2024-08-22
+1213,Customer_214,,toys,north,298.5,2024-03-13
+1028,Customer_29,29.0,toys,East,95.42,2025-01-31
+1069,Customer_70,31.0,Furniture,East,235.57,2023-07-15
+1036,Customer_37,29.0,ELECTRONICS,Central,98.59,2023-12-02
+1040,Customer_41,56.0,Furniture,central,395.48,2025-03-12
+1160,Customer_161,54.0,Clothing,SOUTH,270.37,2025-02-20
+1258,Customer_259,37.0,grocery,Central,206.42,2023-05-21
+1011,Customer_12,35.0,Clothing,West,440.15,2023-11-30
+1154,Customer_155,33.0,Clothing,South,118.16,2023-11-12
+1016,Customer_17,17.0,,west,372.61,2024-02-15
+1261,Customer_262,35.0,Electronics,East,64.83,2023-08-21
+1220,Customer_221,26.0,Clothing,SOUTH,750.37,2023-06-01
+1212,Customer_213,56.0,clothing,East,213.76,2025-03-18
+1141,Customer_142,36.0,Grocery,Central,312.39,2024-05-02
+1098,Customer_99, 35 ,toys,,283.34,2023-11-29
+1179,Customer_180, 49 ,Furniture,West,167.68,2024-04-10
+1046,Customer_47,40.0,clothing,north,303.55,2024-08-14
+1147,Customer_148,,Electronics,North,247.13,2023-07-29
+1237,Customer_238,53.0,clothing,west,282.92,2025-02-14
+1128,Customer_129,28.0,toys,East,51.53,2023-08-30
+1007,Customer_8,35.0,clothing,,449.69,2025-04-13
+1297,Customer_298,55.0,clothing,west,115.95,2025-03-26
+1153,Customer_154,50.0,Furniture,West,433.22,2025-01-17
+1223,Customer_224,16.0,toys,East,23.57,2023-01-15
+1214,Customer_215,38.0,toys,East,344.5,2023-03-22
+1008,Customer_9,23.0,Furniture,north,41.33,2025-01-15
+1027,Customer_28, 16 ,clothing,north,229.99,2025-03-18
+1278,Customer_279,18.0,Grocery,central,227.56,2024-01-22
+1058,Customer_59,,Furniture,north,157.26,2025-05-12
+1216,Customer_217,29.0,Clothing,Central,253.74,2023-08-19
+1224,Customer_225,16.0,Furniture,East,409.68,2024-11-26
+1241,Customer_242,35.0,Toys,SOUTH,531.24,2025-06-14
+1208,Customer_209,54.0,Electronics,north,707.53,2024-05-08
+1031,Customer_32,37.0,,West,146.3,2023-11-26
+1001,Customer_2,43.0,GROCERY,central,87.82,2024-10-11
+1172,Customer_173,41.0,Grocery,Central,72.1,2024-11-02
+1013,Customer_14,27.0,Grocery,,95.68,2024-10-01
+1009,Customer_10,22.0,Clothing,west,221.56,2023-03-09
+1146,Customer_147,55.0,Clothing,Central,90.96,2023-10-11
+1292,Customer_293,49.0,toys,SOUTH,353.32,2023-04-24
+1095,Customer_96,40.0,Furniture,East,376.19,2023-01-05
+1034,Customer_35,76.0,Electronics,West,195.21,2023-02-09
+1096,Customer_97,45.0,electronics,East,358.52,2024-03-04
+1286,Customer_287, 22 ,,North,301.34,2024-02-22
+1193,Customer_194,27.0,electronics,North,92.86,2023-01-09
+1181,Customer_182,34.0,Clothing,south,504.55,2025-04-22
+1248,Customer_249,49.0,,North,58.09,2023-08-28
+1289,Customer_290,22.0,electronics,South,168.13,2023-07-14
+1045,Customer_46,62.0,grocery,South,112.34,2025-04-03
+1221,Customer_222,19.0,grocery,North,223.19,2023-07-27
+1032,Customer_33,34.0,Grocery,north,104.48,2023-08-08
+1077,Customer_78,26.0,Electronics,north,87.19,2025-03-01
+1242,Customer_243,,Toys,North,142.85,2023-09-30
+1133,Customer_134,32.0,clothing,central,115.66,2024-10-20
+1144,Customer_145,37.0,ELECTRONICS,SOUTH,325.25,2025-01-30
+1156,Customer_157,21.0,GROCERY,central,14.84,2024-03-05
+1063,Customer_64,45.0,toys,South,367.91,2023-03-18
+1082,Customer_83,51.0,Furniture,SOUTH,317.64,2025-01-27
+1243,Customer_244,40.0,GROCERY,West,200.47,2024-07-07
+1235,Customer_236,68.0,Furniture,north,325.06,2024-04-24
+1244,Customer_245,51.0,Furniture,central,273.39,2024-12-13
+1041,Customer_42,64.0,Furniture,south,112.51,2023-05-20
+1282,Customer_283,50.0,Furniture,south,110.74,2023-12-01
+1164,Customer_165,46.0,clothing,Central,101.66,2023-10-21
+1109,Customer_110,34.0,Toys,West,83.46,2023-05-15
+1186,Customer_187,52.0,Clothing,central,133.32,2023-12-29
+1228,Customer_229,28.0,ELECTRONICS,SOUTH,191.48,2025-05-11
+1121,Customer_122,37.0,grocery,Central,127.07,2023-03-01
+1051,Customer_52,54.0,Clothing,west,294.14,2024-05-31
+1056,Customer_57, 16 ,ELECTRONICS,North,64.24,2023-11-03
+1254,Customer_255,19.0,Electronics,,84.08,2024-11-28
+1158,Customer_159,53.0,Furniture,East,194.91,2023-07-18
+1085,Customer_86,24.0,GROCERY,East,288.69,2023-02-06
+1120,Customer_121,28.0,toys,North,224.03,2023-07-08
+1298,Customer_299, 52 ,Clothing,north,126.72,2024-08-11
+1066,Customer_67,42.0,clothing,west,97.27,2024-06-09
+1194,Customer_195,16.0,Electronics,East,177.59,2024-02-08
+1240,Customer_241,16.0,Furniture,Central,248.96,2024-07-30
+1270,Customer_271,49.0,Grocery,SOUTH,604.57,2024-06-17
+1087,Customer_88,28.0,Clothing,East,235.01,2025-04-08
+1165,Customer_166,29.0,Electronics,South,156.01,2024-05-02
+1257,Customer_258,30.0,Electronics,north,389.16,2023-04-23
+1285,Customer_286,38.0,clothing,East,291.05,2023-02-17
+1105,Customer_106, 47 ,Electronics,North,12.41,2023-07-26
+1291,Customer_292,28.0,Furniture,East,191.02,2023-07-01
+1182,Customer_183,50.0,electronics,west,223.52,2024-07-05
+1049,Customer_50,31.0,clothing,Central,19.39,2023-02-13
+1226,Customer_227,44.0,Furniture,Central,389.94,2024-07-30
+1005,Customer_6,42.0,clothing,north,116.81,2023-04-20
+1017,Customer_18, 39 ,Furniture,west,390.72,2025-03-17
+1255,Customer_256,55.0,GROCERY,East,181.12,2024-04-08
+1116,Customer_117, 25 ,Furniture,North,240.6,2025-02-16
+1249,Customer_250,54.0,toys,west,93.89,2023-12-05
+1106,Customer_107,,grocery,East,434.67,2024-12-15
+1187,Customer_188,80.0,Toys,North,421.11,2024-10-30
+1162,Customer_163,48.0,clothing,East,115.34,2025-02-23
+1134,Customer_135, 76 ,,Central,168.41,2023-12-30
+1256,Customer_257,27.0,ELECTRONICS,,61.94,2024-07-07
+1190,Customer_191,62.0,Clothing,East,91.54,2024-02-24
+1064,Customer_65,27.0,Grocery,north,168.72,2024-05-17
+1026,Customer_27,40.0,Furniture,North,49.37,2023-07-25
+1225,Customer_226,16.0,Furniture,Central,558.5,2023-11-06
+1169,Customer_170,64.0,Furniture,Central,138.17,2023-08-16
+1180,Customer_181,38.0,Electronics,central,81.5,2024-09-12
+1100,Customer_101,71.0,Electronics,East,120.22,2023-04-07
+1197,Customer_198,33.0,Furniture,West,264.78,2023-08-31
+1209,Customer_210,60.0,Electronics,North,400.77,2024-02-22
+1135,Customer_136, 33 ,clothing,south,232.36,2023-08-09
+1296,Customer_297,30.0,Electronics,central,138.4,2024-04-24
+1272,Customer_273,55.0,Furniture,central,127.73,2024-09-24
+1198,Customer_199,40.0,Clothing,central,134.75,2023-06-12
+1117,Customer_118,33.0,Clothing,SOUTH,585.99,2024-02-12
+1166,Customer_167,150.0,Clothing,west,299.33,2023-06-06
+1236,Customer_237,35.0,GROCERY,west,104.28,2024-09-17
+1136,Customer_137,56.0,Toys,East,91.95,2024-05-24
+1029,Customer_30,47.0,Furniture,,424.08,2023-12-02
+1079,Customer_80,34.0,Furniture,central,391.43,2023-01-26
+1204,Customer_205,40.0,ELECTRONICS,north,340.53,2025-01-14
+1140,Customer_141,46.0,Furniture,West,42.04,2023-03-24
+1157,Customer_158,25.0,Grocery,south,296.57,2023-03-20
+1131,Customer_132, 29 ,electronics,Central,141.96,2025-06-04
+1039,Customer_40,47.0,toys,SOUTH,49.83,2023-01-05
+1178,Customer_179,32.0,Grocery,North,383.79,2023-04-03
+1205,Customer_206,52.0,Toys,south,163.39,2024-05-25
+1215,Customer_216,24.0,clothing,North,167.18,2024-09-05
+1239,Customer_240, 16 ,clothing,central,205.65,2024-11-30
+1054,Customer_55,29.0,clothing,south,362.6,2024-09-19
+1024,Customer_25, 61 ,grocery,Central,368.16,2024-04-05
+1200,Customer_201,50.0,GROCERY,South,258.62,2024-04-09
+1043,Customer_44,999.0,toys,west,235.44,2024-04-23
+1268,Customer_269,26.0,Clothing,East,130.4,2024-05-13
+1048,Customer_49,34.0,toys,West,120.27,2023-06-07
+1035,Customer_36,36.0,Furniture,west,338.01,2025-05-17
+1059,Customer_60,35.0,Grocery,west,706.22,2023-03-16
+1143,Customer_144,49.0,ELECTRONICS,East,221.46,2024-09-19
+1053,Customer_54,41.0,Grocery,central,118.21,2023-10-15
+1020,Customer_21,16.0,Electronics,north,195.92,2023-02-03
+1124,Customer_125,36.0,Furniture,SOUTH,204.68,2023-07-27
+1142,Customer_143,56.0,GROCERY,Central,413.81,2023-08-13
+1110,Customer_111,50.0,Furniture,West,492.1,2024-05-03
+1259,Customer_260,49.0,Clothing,,97.1,2024-05-10
+1076,Customer_77,59.0,Furniture,North,252.42,2025-02-03
+1286,Customer_287,22.0,,North,301.34,2024-02-22
+1277,Customer_278,22.0,Furniture,East,250.85,2023-05-29
+1107,Customer_108,40.0,Toys,west,240.97,2023-10-08
+1093,Customer_94, 32 ,Clothing,north,113.29,2024-08-04
+1012,Customer_13,44.0,Toys,west,36.1,2025-05-24
+1047,Customer_48,39.0,toys,Central,121.49,2023-04-19
+1203,Customer_204, 37 ,Clothing,SOUTH,698.59,2025-02-21
+1271,Customer_272,32.0,toys,central,44.53,2023-03-25
+1119,Customer_120,37.0,Clothing,North,274.18,2025-02-13
+1021,Customer_22,36.0,electronics,south,164.89,2024-09-04
+1083,Customer_84, 16 ,Electronics,south,186.51,2023-08-05
+1130,Customer_131,39.0,electronics,East,224.2,2023-01-21
+1229,Customer_230,25.0,Toys,North,212.86,2024-11-11
+1049,Customer_50,31.0,clothing,Central,19.39,2023-02-13
+1123,Customer_124,,Furniture,north,102.08,2024-01-03
+1033,Customer_34,16.0,Toys,East,95.35,2024-08-25
+1004,Customer_5, 30 ,ELECTRONICS,Central,666.77,2025-04-27
+1019,Customer_20, 33 ,Grocery,Central,99.68,2023-10-18
+1219,Customer_220,25.0,clothing,north,76.77,2025-02-05
+1140,Customer_141,46.0,Furniture,West,42.04,2023-03-24
+1149,Customer_150,37.0,toys,North,125.73,2023-09-02
+1224,Customer_225,16.0,Furniture,East,409.68,2024-11-26
+1247,Customer_248,43.0,Toys,Central,417.34,2023-02-28
+1281,Customer_282,48.0,Furniture,west,174.18,2023-01-13
+1151,Customer_152,16.0,clothing,south,315.73,2023-02-10
+1233,Customer_234,56.0,Clothing,North,206.13,2025-04-28
+1010,Customer_11,52.0,Electronics,west,381.75,2023-03-08
+1071,Customer_72,19.0,Furniture,west,125.36,2023-11-21
+1252,Customer_253, 57 ,Furniture,central,453.31,2024-07-27
+1092,Customer_93,52.0,Electronics,West,319.31,2023-03-20
+1192,Customer_193,57.0,Clothing,Central,183.83,2023-12-31
+1257,Customer_258,30.0,Electronics,north,389.16,2023-04-23
+1234,Customer_235,43.0,Clothing,East,505.33,2023-12-18
+1195,Customer_196,51.0,Furniture,North,61.42,2023-11-20
+1137,Customer_138,46.0,Clothing,central,44.9,2024-03-22
+1260,Customer_261,40.0,Clothing,south,252.88,2024-03-22
+1038,Customer_39,23.0,Clothing,East,67.01,2023-05-03
+1201,Customer_202,53.0,,west,78.28,2024-08-29
+1189,Customer_190,,Grocery,west,184.11,2025-03-21
+1251,Customer_252,16.0,Electronics,north,143.38,2023-02-04
+1112,Customer_113,50.0,Furniture,South,87.17,2023-04-02
+1183,Customer_184, 45 ,grocery,south,724.54,2024-10-20
+1152,Customer_153,45.0,Electronics,west,240.14,2025-06-09
+1191,Customer_192,18.0,Toys,North,134.91,2024-07-23
+1044,Customer_45,38.0,GROCERY,west,276.6,2024-12-16
+1275,Customer_276,,ELECTRONICS,north,122.64,2024-11-20
+1006,Customer_7,34.0,toys,East,266.58,2023-10-08
+1250,Customer_251,44.0,Furniture,central,182.47,2023-04-02
+1075,Customer_76,16.0,Grocery,Central,90.34,2023-02-20
+1000,Customer_1,47.0,Furniture,Central,540.89,2023-05-21
+1068,Customer_69,34.0,toys,Central,184.34,2025-04-07
+1167,Customer_168,28.0,Furniture,SOUTH,286.0,2024-03-02
+1218,Customer_219,46.0,toys,West,439.08,2023-11-21
+1042,Customer_43,31.0,toys,south,420.58,2024-04-15
+1072,Customer_73,42.0,Furniture,East,654.19,2025-01-02
+1023,Customer_24,55.0,toys,south,145.53,2023-05-16
+1185,Customer_186,,Furniture,central,172.54,2023-05-26
+1103,Customer_104,47.0,Grocery,Central,59.25,2023-10-12
+1211,Customer_212,70.0,,Central,334.69,2025-01-01
+1067,Customer_68,38.0,ELECTRONICS,West,95.66,2024-12-22
+1025,Customer_26,25.0,GROCERY,West,549.03,2023-05-04
+1196,Customer_197,49.0,Furniture,North,455.46,2025-01-29
+1175,Customer_176,21.0,toys,West,175.99,2024-06-22
