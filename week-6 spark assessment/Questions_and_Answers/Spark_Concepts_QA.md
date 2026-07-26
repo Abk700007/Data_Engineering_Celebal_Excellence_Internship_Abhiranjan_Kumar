@@ -46,3 +46,49 @@ df = spark.read.csv(
 
 ---
 
+### **Q4: What is the difference between CSV and Parquet in terms of storage (row-based vs. columnar) and why does it matter for performance?**
+
+| Feature | CSV (Comma-Separated Values) | Apache Parquet |
+| :--- | :--- | :--- |
+| **Storage Model** | **Row-based:** Records are stored line-by-line. To read a single column, all columns in the row must be scanned. | **Columnar:** Values from the same column are stored together in contiguous blocks. |
+| **Schema Support** | Plain text; schema is not preserved. Must be inferred or provided on read. | Self-describing; schema and data types are saved directly in file metadata. |
+| **Compression** | Poor (plain text); compression can only be applied to the whole file. | Excellent; per-column compression (e.g., Snappy, Gzip) utilizing value-similarity. |
+| **Column Pruning** | No; full rows must always be read into memory. | Yes; only columns requested in `select()` are read from disk. |
+| **Predicate Pushdown**| No; all records must be parsed before filtering. | Yes; skips reading blocks using min/max stats stored in metadata. |
+
+**Why it matters for performance:** Parquet reduces disk I/O, minimizes memory footprints, compresses data up to 10x better than CSV, and speeds up analytical queries by orders of magnitude on large datasets.
+
+---
+
+### **Q5: Given a DataFrame df, write a query to select the columns product_id and price where the category is 'Electronics'.**
+
+```python
+from pyspark.sql.functions import col
+
+# Recommended Approach (Using functions.col)
+electronics_df = df.filter(col("category") == "Electronics") \
+                   .select("product_id", "price")
+
+# Alternative syntax using DataFrame references
+# electronics_df = df.filter(df.category == "Electronics").select("product_id", "price")
+
+electronics_df.show()
+```
+
+---
+
+### **Q6: Write the code to "revise" a DataFrame by renaming the column old_name to new_name and casting the price column from a String to a Double.**
+
+```python
+from pyspark.sql.functions import col
+from pyspark.sql.types import DoubleType
+
+revised_df = df.withColumnRenamed("old_name", "new_name") \
+               .withColumn("price", col("price").cast(DoubleType()))
+
+# Alternatively, using string shortcut for casting:
+# revised_df = df.withColumnRenamed("old_name", "new_name").withColumn("price", col("price").cast("double"))
+```
+
+---
+
