@@ -133,3 +133,47 @@ This prevents loading irrelevant blocks of data from disk into Spark's executor 
 
 ---
 
+### **Q10: Write a code snippet to add a new column final_price which is the base_price multiplied by 1.18 (18% tax).**
+
+```python
+from pyspark.sql.functions import col, round as spark_round
+
+df_with_tax = df.withColumn(
+    "final_price", 
+    spark_round(col("base_price") * 1.18, 2)
+)
+```
+
+Here, `withColumn()` is used to instantiate the new column, and `spark_round` ensures the calculated decimal values are rounded to 2 decimal places for financial reporting.
+
+---
+
+### **Q11: What is the difference between Transformations and Actions? Provide two examples of each.**
+
+*   **Transformations:** Lazily evaluated operations that define how to build a new DataFrame from an existing one. They do not trigger computations immediately but compile a lineage graph.
+    *   *Narrow Transformations:* Do not require data shuffling across partitions (e.g., `filter()`, `select()`, `withColumn()`).
+    *   *Wide Transformations:* Require data to be shuffled across nodes (e.g., `groupBy()`, `join()`, `distinct()`).
+*   **Actions:** Eagerly evaluated operations that trigger the execution of all recorded transformations (the DAG lineage) to produce a final value or output.
+    *   *Examples:* `show()`, `count()`, `collect()`, `write()`.
+
+---
+
+### **Q12: Write the Spark command to load a Parquet file from "path/to/input", filter out any rows where user_id is null, and save the result as a CSV at "path/to/output".**
+
+```python
+from pyspark.sql.functions import col
+
+# 1. Load Parquet file
+df = spark.read.parquet("path/to/input")
+
+# 2. Filter out null user_id rows
+filtered_df = df.filter(col("user_id").isNotNull())
+
+# 3. Save as CSV
+filtered_df.write.mode("overwrite") \
+                 .option("header", True) \
+                 .csv("path/to/output")
+```
+
+---
+
