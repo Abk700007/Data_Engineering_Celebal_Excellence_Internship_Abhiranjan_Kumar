@@ -1,0 +1,19 @@
+product_id,item_name,category,unit_price,quantity,region,priority,status,final_price,category_upper
+101,Wireless Mouse,Electronics,799.5,120,North,Low,Completed,943.41,ELECTRONICS
+102,Bluetooth Speaker,Electronics,1999.0,45,South,Medium,Completed,2358.82,ELECTRONICS
+103,Office Chair,Furniture,4500.0,15,East,High,Pending,5310.0,FURNITURE
+104,Notebook Set,Stationery,150.0,300,West,Low,Completed,177.0,STATIONERY
+105,LED Monitor,Electronics,8999.0,25,North,Medium,Completed,10618.82,ELECTRONICS
+106,Study Table,Furniture,3200.0,10,South,Low,Cancelled,3776.0,FURNITURE
+108,Smartphone,Electronics,15999.0,60,West,High,Completed,18878.82,ELECTRONICS
+109,Gaming Keyboard,Electronics,2499.0,0,North,Medium,Pending,2948.82,ELECTRONICS
+110,Bookshelf,Furniture,2750.0,18,South,Low,Completed,3245.0,FURNITURE
+111,Sketch Pens,Stationery,120.0,220,East,Low,Completed,141.6,STATIONERY
+112,Laptop Stand,Electronics,899.0,80,West,Medium,Completed,1060.82,ELECTRONICS
+114,Desk Lamp,Electronics,650.0,90,South,Low,Completed,767.0,ELECTRONICS
+115,Whiteboard,Stationery,1100.0,0,East,Medium,Pending,1298.0,STATIONERY
+116,Tablet,Electronics,12999.0,35,North,High,Completed,15338.82,ELECTRONICS
+117,Filing Cabinet,Furniture,3999.0,12,South,Low,Cancelled,4718.82,FURNITURE
+118,Marker Set,Stationery,199.0,150,East,High,Completed,234.82,STATIONERY
+119,Router,Electronics,1799.0,0,West,Medium,Completed,2122.82,ELECTRONICS
+120,Wall Clock,Furniture,499.0,60,North,Low,Completed,588.82,FURNITURE
