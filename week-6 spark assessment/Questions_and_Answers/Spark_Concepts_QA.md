@@ -92,3 +92,44 @@ revised_df = df.withColumnRenamed("old_name", "new_name") \
 
 ---
 
+### **Q7: How does Spark use the Lineage Graph (DAG) to provide fault tolerance if a worker node fails?**
+
+Spark does not rely on expensive data replication across multiple machines for fault tolerance. Instead, it tracks the history of all transformations used to build a DataFrame inside a **Directed Acyclic Graph (DAG)** or **Lineage Graph**.
+
+If a worker node fails and a partition of data is lost:
+1.  Spark's Driver identifies which partition went missing.
+2.  It traces back through the Lineage Graph to determine the exact sequence of transformations that created that lost partition.
+3.  It schedules a new task on a healthy executor to recompute *only* that missing partition from the original source or the nearest cached/checkpointed stage.
+
+This logical reconstruction makes Spark highly resilient with minimal storage overhead.
+
+---
+
+### **Q8: Write a query to filter a DataFrame df_orders for rows where the status is 'Completed' AND the amount is greater than 1000.**
+
+```python
+from pyspark.sql.functions import col
+
+completed_high_value = df_orders.filter(
+    (col("status") == "Completed") & (col("amount") > 1000)
+)
+```
+
+> [!NOTE]
+> In PySpark, when combining conditions using logical operators like `&` (AND) or `|` (OR), you **must** wrap each condition in parentheses to prevent operator precedence issues.
+
+---
+
+### **Q9: Explain the concept of Predicate Pushdown in Parquet and how it affects the amount of data loaded into memory.**
+
+**Predicate Pushdown** is an optimization where filter conditions (predicates) are pushed down directly to the storage layer (the Parquet reader) during the file scan operation.
+
+Parquet files divide data into row groups and store summary statistics (such as `min_value` and `max_value`) for each column inside the file footer.
+1.  When Spark processes a query with a filter (e.g., `df.filter(col("price") > 1000)`), it pushes this filter down.
+2.  The Parquet reader checks the `min`/`max` metadata of each row group before reading.
+3.  If a row group's `max_value` for `price` is less than 1000, Spark skips reading, loading, and decompressing that row group entirely.
+
+This prevents loading irrelevant blocks of data from disk into Spark's executor memory, drastically reducing network I/O, CPU cycles, and memory footprint.
+
+---
+
