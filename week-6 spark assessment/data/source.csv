@@ -1,0 +1,21 @@
+product_id,product_name,category,price,quantity,region,priority,status
+101,Wireless Mouse,Electronics,799.50,120,North,Low,Completed
+102,Bluetooth Speaker,Electronics,1999.00,45,South,Medium,Completed
+103,Office Chair,Furniture,4500.00,15,East,High,Pending
+104,Notebook Set,Stationery,150.00,300,West,Low,Completed
+105,LED Monitor,Electronics,8999.00,25,North,Medium,Completed
+106,Study Table,Furniture,3200.00,10,South,Low,Cancelled
+107,Ball Pen Pack,Stationery,,500,East,Low,Completed
+108,Smartphone,Electronics,15999.00,60,West,High,Completed
+109,Gaming Keyboard,Electronics,2499.00,,North,Medium,Pending
+110,Bookshelf,Furniture,2750.00,18,South,Low,Completed
+111,Sketch Pens,Stationery,120.00,220,East,Low,Completed
+112,Laptop Stand,Electronics,899.00,80,West,Medium,Completed
+113,Recliner Sofa,Furniture,,5,North,High,Pending
+114,Desk Lamp,Electronics,650.00,90,South,Low,Completed
+115,Whiteboard,Stationery,1100.00,,East,Medium,Pending
+116,Tablet,Electronics,12999.00,35,North,High,Completed
+117,Filing Cabinet,Furniture,3999.00,12,South,Low,Cancelled
+118,Marker Set,Stationery,199.00,150,East,High,Completed
+119,Router,Electronics,1799.00,,West,Medium,Completed
+120,Wall Clock,Furniture,499.00,60,North,Low,Completed
