@@ -177,3 +177,36 @@ filtered_df.write.mode("overwrite") \
 
 ---
 
+### **Q13: In Spark Architecture, what is the difference between Client Mode and Cluster Mode?**
+
+The difference depends on **where the Driver process runs**:
+
+*   **Client Mode:**
+    *   The Driver process runs locally on the host machine that submitted the job (e.g., your laptop, or an edge gateway node).
+    *   Executors run on the worker nodes in the cluster.
+    *   *Use Case:* Best for interactive environments, notebooks (Jupyter, Zepplin), and debugging where console outputs must be reviewed in real-time.
+    *   *Risk:* If the host machine disconnects or powers down, the entire Spark job fails immediately.
+*   **Cluster Mode:**
+    *   The Driver process is scheduled and runs inside an application master container *directly on one of the worker nodes* in the cluster.
+    *   Executors run on other worker nodes in the cluster.
+    *   *Use Case:* Best for production workloads, cron scheduler jobs, and batch jobs.
+    *   *Advantage:* Once submitted, the local submission terminal can disconnect, and the job will execute independently to completion.
+
+---
+
+### **Q14: Write a query to filter a dataset for rows where the region is 'North' OR the priority is 'High'.**
+
+```python
+from pyspark.sql.functions import col
+
+filtered_df = df.filter(
+    (col("region") == "North") | (col("priority") == "High")
+)
+```
+
+---
+
+### **Q15: When exploring a dataset, why is it safer to use .show(5) instead of .collect() on a multi-terabyte dataset?**
+
+*   **`collect()` is dangerous:** It pulls *every single row* of the distributed DataFrame from all executors across the cluster and brings it back to the Driver process as a single in-memory collection. If the dataset is multi-terabyte, this will instantly exceed the driver’s memory limits, causing an **Out-Of-Memory (OOM) crash** and disrupting the application.
+*   **`show(5)` is safe:** It only requests the first 5 records from Spark. Spark utilizes short-circuit execution: executors only process and send a small subset of partitions containing enough data to produce the first 5 rows. The Driver receives a negligible amount of data, keeping it safe and fast.
