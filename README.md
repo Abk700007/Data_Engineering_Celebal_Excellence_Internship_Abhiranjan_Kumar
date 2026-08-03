@@ -16,7 +16,7 @@ The internship is structured around weekly assessments covering different facets
 | **Week 4** | [Week 4 - Azure Cloud and ADF Pipeline](./week-4%20Azure%20cloud%20concepts%20and%20Data%20Pipeline%20implementation%20using%20ADF/) | Completed | Azure cloud fundamentals, Storage accounts, Blob containers, ADF Pipelines, Linked Services, Datasets, activities (Get Metadata, Copy Data), Fault Tolerance, and RBAC Managed Identity configuration. |
 | **Week 5** | [Week 5 - Spark fundamentals and Data cleaning pipeline](./week-5%20Spark%20fundamentals%20and%20Data%20cleaning%20pipeline%20using%20DataFrames/) | Completed | PySpark pipeline for data cleaning, transformation, and aggregation on customer sales data. |
 | **Week 6** | [Week 6 - Spark Data Processing & Optimization](./week-6%20spark%20assessment/) | Completed | PySpark architecture, Lazy Evaluation, explicit schema handling, narrow vs. wide transformations, Parquet storage with Predicate Pushdown verification. |
-| **Week 7** | *To be updated* | Upcoming | Week 7 assessment task. |
+| **Week 7** | [Week 7 - Delta Lake & SCD](./week-7%20delta-lake-assignment/) | Completed | Implementing slowly changing dimensions (SCD Type 1 and Type 2) using PySpark and Delta Lake tables. |
 | **Week 8** | *To be updated* | Upcoming | Week 8 assessment task. |
 
 ---
@@ -121,6 +121,24 @@ The files and weekly assessment directories are structured as follows:
 │   │   └── screenshots/
 │   ├── insights/
 │   │   └── performance_insights.md
+│   └── README.md
+│
+├── week-7 delta-lake-assignment/
+│   ├── data/
+│   │   └── delta/
+│   │       └── customer_table/
+│   │           └── _delta_log/
+│   ├── notebooks/
+│   │   └── delta_lake_scd.ipynb
+│   ├── report/
+│   │   └── delta_lake_report.md
+│   ├── screenshots/
+│   │   ├── data_loading/
+│   │   ├── data_cleaning/
+│   │   ├── scd1/
+│   │   ├── scd2/
+│   │   ├── validation/
+│   │   └── final_output/
 │   └── README.md
 │
 └── README.md (Root)
