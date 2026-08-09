@@ -48,8 +48,8 @@ If your Databricks cluster is restarted or rebuilt, you will need to update the 
 1.  Open `CEI_Food_Delivery_Analytics_Dashboard.pbix` in Power BI Desktop.
 2.  Go to **Home** → **Transform Data** → **Data source settings**.
 3.  Select the **Azure Databricks** connection and click **Change Source**.
-4.  Enter your new cluster parameters:
-    *   **Server Hostname**: E.g. `adb-7405616248700702.2.azuredatabricks.net`
-    *   **HTTP Path**: E.g. `/sql/protocolv1/o/7405616248700702/0809-015309-8dmi5vhe`
+4.  Enter your cluster parameters:
+    *   **Server Hostname**: `adb-7405616248700702.2.azuredatabricks.net`
+    *   **HTTP Path**: `/sql/protocolv1/o/7405616248700702/0809-015309-8dmi5vhe`
 5.  If prompted for credentials, select **Token** authentication and paste your new **Personal Access Token (PAT)** from Databricks User Settings.
 6.  Save and apply changes to update the live charts.
