@@ -1,0 +1,18 @@
+# Python bytecode cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Operating system metadata files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Local configuration & environment keys
+.env
+.databricks/
+*.key
+*.token
+secret.txt
