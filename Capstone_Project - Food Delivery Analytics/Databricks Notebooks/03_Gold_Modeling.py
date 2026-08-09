@@ -178,3 +178,33 @@ kpi_daily_trends = (
  .format("delta")
  .mode("overwrite")
  .save(gold_kpi_daily_trends_path))
+
+print("Gold KPI tables pre-computed successfully.")
+
+# COMMAND ----------
+
+# DBTITLE 1,Register Tables in Unity Catalog Metastore
+# Switch catalog to the workspace Unity Catalog
+spark.sql("USE CATALOG food_delivery_dbw_east")
+
+# Create target database if it doesn't exist in the catalog
+spark.sql(f"CREATE DATABASE IF NOT EXISTS {target_database}")
+
+tables_to_register = [
+    ("gold_dim_users", gold_dim_users_path),
+    ("gold_dim_restaurants", gold_dim_restaurants_path),
+    ("gold_fact_orders", gold_fact_orders_path),
+    ("gold_kpi_revenue_by_city", gold_kpi_revenue_by_city_path),
+    ("gold_kpi_restaurant_performance", gold_kpi_restaurant_performance_path),
+    ("gold_kpi_daily_trends", gold_kpi_daily_trends_path)
+]
+
+for table_name, physical_path in tables_to_register:
+    full_table_name = f"{target_database}.{table_name}"
+    print(f"Registering logical table {full_table_name}...")
+    # Load conformed Delta data from ADLS Gen2
+    df = spark.read.format("delta").load(physical_path)
+    # Save as managed table in Unity Catalog default schema
+    df.write.format("delta").mode("overwrite").saveAsTable(full_table_name)
+    print(f"Logical table {full_table_name} registered successfully in Unity Catalog.")
+
