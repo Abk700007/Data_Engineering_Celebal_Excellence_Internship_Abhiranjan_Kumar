@@ -38,3 +38,63 @@ if storage_account_key.strip() != "":
 else:
     print(f"No storage key provided. Using Paths: Silver Path = {base_silver_path}, Gold Path = {base_gold_path}")
 
+# COMMAND ----------
+
+# DBTITLE 1,Load Silver Tables
+try:
+    silver_users = spark.read.format("delta").load(f"{base_silver_path.rstrip('/')}/users")
+    silver_restaurants = spark.read.format("delta").load(f"{base_silver_path.rstrip('/')}/restaurants")
+    silver_orders = spark.read.format("delta").load(f"{base_silver_path.rstrip('/')}/orders")
+    print("Successfully loaded all Silver tables.")
+except Exception as e:
+    print(f"❌ Failed to load Silver tables. Error: {str(e)}")
+    raise e
+
+# COMMAND ----------
+
+# DBTITLE 1,Build Gold Dimension Tables
+from pyspark.sql.functions import col
+
+gold_dim_users_path = f"{base_gold_path.rstrip('/')}/dim_users"
+gold_dim_restaurants_path = f"{base_gold_path.rstrip('/')}/dim_restaurants"
+
+# Filter active records for dimensions to ensure uniqueness of keys
+print("Building gold_dim_users...")
+dim_users = (
+    silver_users
+    .filter(col("is_current").cast("boolean") == True)
+    .select("user_id", "user_name", "city")
+)
+
+(dim_users.write
+ .format("delta")
+ .mode("overwrite")
+ .save(gold_dim_users_path))
+
+print("Building gold_dim_restaurants...")
+dim_restaurants = (
+    silver_restaurants
+    .filter(col("is_current").cast("boolean") == True)
+    .select("restaurant_id", "restaurant_name", "cuisine", "rating")
+)
+
+(dim_restaurants.write
+ .format("delta")
+ .mode("overwrite")
+ .save(gold_dim_restaurants_path))
+
+print("Gold dimension tables created successfully.")
+
+# COMMAND ----------
+
+# DBTITLE 1,Build Gold Fact Table (Denormalized)
+gold_fact_orders_path = f"{base_gold_path.rstrip('/')}/fact_orders"
+
+print("Building gold_fact_orders...")
+# Join Silver orders with Gold dimensions via LEFT JOIN
+# Denormalize city, restaurant_name, cuisine, and rating (Fixes limitation from project docs)
+fact_orders = (
+    silver_orders.alias("o")
+    .join(dim_users.alias("u"), "user_id", "left")
+    .join(dim_restaurants.alias("r"), "restaurant_id", "left")
+    .select(
