@@ -135,3 +135,5 @@ The Power BI workbook connects directly to the Databricks cluster via **DirectQu
 *   **Delta Lake & ACID**: CDC merges utilizing match/no-match conditions, schema evolution control (`mergeSchema=true`), and storage optimizations (Z-Order index optimization).
 *   **Enterprise Data Modeling**: Design of dimension and fact tables, Slowly Changing Dimensions (SCD Type 2), and pre-aggregated data marts.
 *   **Business Intelligence**: Live DirectQuery connections, data modeling design, and multi-page dashboard orchestration.
+
+<!-- Project submission finalized. -->
