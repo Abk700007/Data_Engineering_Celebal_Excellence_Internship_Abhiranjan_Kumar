@@ -38,3 +38,83 @@ else:
 
 # COMMAND ----------
 
+# DBTITLE 1,Define Reusable Data Cleaning Function
+from pyspark.sql.functions import col, trim, initcap
+from pyspark.sql.types import StringType
+
+def clean_dataframe(df):
+    """
+    Standardizes all string columns by trimming trailing/leading spaces
+    and converting casing to initial capital letters (initcap).
+    """
+    for field in df.schema.fields:
+        if isinstance(field.dataType, StringType):
+            df = df.withColumn(field.name, initcap(trim(col(field.name))))
+    return df
+
+# COMMAND ----------
+
+# DBTITLE 1,Process Orders CDC Merge
+from pyspark.sql.window import Window
+from pyspark.sql.functions import row_number, desc, coalesce, lit, current_timestamp
+from delta.tables import DeltaTable
+
+silver_orders_path = f"{base_silver_path.rstrip('/')}/orders"
+bronze_orders_path = f"{base_bronze_path.rstrip('/')}/orders"
+bronze_orders_cdc_path = f"{base_bronze_path.rstrip('/')}/orders_cdc"
+
+print(f"Processing Orders CDC Merge: Target = {silver_orders_path}")
+
+# 1. Load Bronze datasets
+try:
+    orders_df = spark.read.format("delta").load(bronze_orders_path)
+    orders_cdc_df = spark.read.format("delta").load(bronze_orders_cdc_path)
+except Exception as e:
+    print(f"❌ Failed to load Bronze datasets: {str(e)}")
+    raise e
+
+# 2. Deduplicate CDC records to keep only the latest update per order
+window_spec = Window.partitionBy("order_id").orderBy(desc("updated_at"))
+deduped_cdc = (
+    orders_cdc_df
+    .withColumn("row_num", row_number().over(window_spec))
+    .filter("row_num = 1")
+    .drop("row_num")
+)
+
+# 3. Join base orders with CDC records to build unified states
+# Fallback status to 'Ordered' and _last_updated to order_timestamp
+orders_conformed = (
+    orders_df.alias("o")
+    .join(deduped_cdc.alias("c"), "order_id", "left")
+    .select(
+        col("o.order_id"),
+        col("o.user_id"),
+        col("o.restaurant_id"),
+        col("o.order_timestamp"),
+        col("o.total_amount"),
+        coalesce(col("c.status"), lit("Ordered")).alias("status"),
+        coalesce(col("c.updated_at"), col("o.order_timestamp")).alias("_last_updated")
+    )
+)
+
+# 4. Standardize strings in combined dataset
+orders_cleaned = clean_dataframe(orders_conformed)
+
+# 5. Merge into Silver Orders delta folder using try/except
+try:
+    # Attempt to load the table as DeltaTable
+    silver_table = DeltaTable.forPath(spark, silver_orders_path)
+    
+    print("Existing Silver Orders table found. Executing incremental CDC merge...")
+    (silver_table.alias("target")
+     .merge(
+         orders_cleaned.alias("source"),
+         "target.order_id = source.order_id"
+     )
+     .whenMatchedUpdate(set={
+         "status": "source.status",
+         "_last_updated": "source._last_updated"
+     })
+     .whenNotMatchedInsertAll()
+     .execute())
