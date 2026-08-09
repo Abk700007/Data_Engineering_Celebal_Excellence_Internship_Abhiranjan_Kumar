@@ -208,3 +208,13 @@ for table_name, physical_path in tables_to_register:
     df.write.format("delta").mode("overwrite").saveAsTable(full_table_name)
     print(f"Logical table {full_table_name} registered successfully in Unity Catalog.")
 
+# COMMAND ----------
+
+# DBTITLE 1,Performance Optimization via Z-Ordering
+# Optimize the fact table on the time-series column order_timestamp
+print("Optimizing fact table using Z-Ordering on order_timestamp...")
+try:
+    spark.sql(f"OPTIMIZE {target_database}.gold_fact_orders ZORDER BY (order_timestamp)")
+    print("Z-Order optimization completed successfully.")
+except Exception as e:
+    print(f"⚠️ Warning: Z-Order optimization encountered an issue (non-Photon engine or workspace limitations): {str(e)}")
