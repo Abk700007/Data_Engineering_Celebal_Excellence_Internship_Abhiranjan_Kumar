@@ -98,3 +98,83 @@ fact_orders = (
     .join(dim_users.alias("u"), "user_id", "left")
     .join(dim_restaurants.alias("r"), "restaurant_id", "left")
     .select(
+        col("o.order_id"),
+        col("o.user_id"),
+        col("o.restaurant_id"),
+        col("o.order_timestamp"),
+        col("o.total_amount"),
+        col("o.status"),
+        col("u.city").alias("city"),
+        col("r.restaurant_name").alias("restaurant_name"),
+        col("r.cuisine").alias("cuisine"),
+        col("r.rating").alias("rating")
+    )
+)
+
+(fact_orders.write
+ .format("delta")
+ .mode("overwrite")
+ .save(gold_fact_orders_path))
+
+print("Gold fact table created successfully.")
+
+# COMMAND ----------
+
+# DBTITLE 1,Pre-compute KPI Aggregates
+from pyspark.sql.functions import sum as _sum, count, avg, date_trunc, desc
+
+gold_kpi_revenue_by_city_path = f"{base_gold_path.rstrip('/')}/kpi_revenue_by_city"
+gold_kpi_restaurant_performance_path = f"{base_gold_path.rstrip('/')}/kpi_restaurant_performance"
+gold_kpi_daily_trends_path = f"{base_gold_path.rstrip('/')}/kpi_daily_trends"
+
+# KPI 1: Revenue and order volume by city
+print("Computing KPI: Revenue by City...")
+kpi_revenue_by_city = (
+    fact_orders
+    .groupBy("city")
+    .agg(
+        _sum("total_amount").alias("total_revenue"),
+        count("order_id").alias("total_orders")
+    )
+    .orderBy(desc("total_revenue"))
+)
+
+(kpi_revenue_by_city.write
+ .format("delta")
+ .mode("overwrite")
+ .save(gold_kpi_revenue_by_city_path))
+
+# KPI 2: Restaurant rankings, average rating, and order counts
+print("Computing KPI: Restaurant Performance...")
+kpi_restaurant_performance = (
+    fact_orders
+    .groupBy("restaurant_name", "cuisine")
+    .agg(
+        _sum("total_amount").alias("revenue"),
+        avg("rating").alias("avg_rating"),
+        count("order_id").alias("order_count")
+    )
+    .orderBy(desc("revenue"))
+)
+
+(kpi_restaurant_performance.write
+ .format("delta")
+ .mode("overwrite")
+ .save(gold_kpi_restaurant_performance_path))
+
+# KPI 3: Daily revenue and order count trends
+print("Computing KPI: Daily Trends...")
+kpi_daily_trends = (
+    fact_orders
+    .groupBy(date_trunc("day", col("order_timestamp")).cast("date").alias("order_date"))
+    .agg(
+        _sum("total_amount").alias("daily_revenue"),
+        count("order_id").alias("daily_orders")
+    )
+    .orderBy("order_date")
+)
+
+(kpi_daily_trends.write
+ .format("delta")
+ .mode("overwrite")
+ .save(gold_kpi_daily_trends_path))
