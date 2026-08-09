@@ -26,3 +26,17 @@ dbutils.widgets.text("base_raw_path", "dbfs:/FileStore/food_delivery_analytics/r
 dbutils.widgets.text("base_bronze_path", "dbfs:/FileStore/food_delivery_analytics/bronze", "Base Bronze Delta Path")
 
 # COMMAND ----------
+
+# DBTITLE 1,Initialize Configurations
+storage_account_name = dbutils.widgets.get("storage_account_name")
+container_name = dbutils.widgets.get("container_name")
+storage_account_key = dbutils.widgets.get("storage_account_key")
+base_raw_path = dbutils.widgets.get("base_raw_path")
+base_bronze_path = dbutils.widgets.get("base_bronze_path")
+
+# Configure ADLS Authentication if storage account key is provided
+if storage_account_key.strip() != "":
+    spark.conf.set(
+        f"fs.azure.account.key.{storage_account_name}.dfs.core.windows.net",
+        storage_account_key
+    )
