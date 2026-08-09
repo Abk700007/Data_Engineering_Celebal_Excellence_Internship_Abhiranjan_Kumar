@@ -40,3 +40,41 @@ if storage_account_key.strip() != "":
         f"fs.azure.account.key.{storage_account_name}.dfs.core.windows.net",
         storage_account_key
     )
+    # Automatically update raw and bronze paths to use Azure storage if they are default dbfs values
+    if "dbfs:/FileStore" in base_raw_path:
+        base_raw_path = f"abfss://{container_name}@{storage_account_name}.dfs.core.windows.net/raw"
+    if "dbfs:/FileStore" in base_bronze_path:
+        base_bronze_path = f"abfss://{container_name}@{storage_account_name}.dfs.core.windows.net/bronze"
+    print(f"Authenticated with ADLS Gen2. Raw Path: {base_raw_path}, Bronze Path: {base_bronze_path}")
+else:
+    print(f"No storage key provided. Using Paths: Raw Path = {base_raw_path}, Bronze Path = {base_bronze_path}")
+
+# COMMAND ----------
+
+# DBTITLE 1,Cleanup existing bronze directory for Idempotent Reruns
+try:
+    print(f"Cleaning up existing bronze directory at {base_bronze_path}...")
+    dbutils.fs.rm(base_bronze_path, True)
+    print("Cleanup successful.")
+except Exception as e:
+    print(f"Cleanup info (directory might not exist yet): {str(e)}")
+
+# COMMAND ----------
+
+# DBTITLE 1,Define Ingestion Helper Function
+from pyspark.sql.functions import current_timestamp, col
+
+def ingest_to_bronze(source_csv_name, target_folder_name):
+    source_path = f"{base_raw_path.rstrip('/')}/{source_csv_name}"
+    target_path = f"{base_bronze_path.rstrip('/')}/{target_folder_name}"
+    
+    print(f"Starting Ingestion: {source_path} -> {target_path}...")
+    
+    # Read CSV with headers and inferred schema
+    df = (spark.read
+          .format("csv")
+          .option("header", "true")
+          .option("inferSchema", "true")
+          .load(source_path))
+    
+    # Add lineage metadata columns
