@@ -117,3 +117,5 @@ try:
         print(f.path)
 except Exception as e:
     print(f"❌ Verification failed to list directories: {str(e)}")
+
+# End of pipeline script
