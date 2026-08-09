@@ -1,0 +1,601 @@
+product_id,product_name,category,subcategory,cost_price
+PROD0001,Laptop 1,Electronics,Consumer Electronics,30352.4
+PROD0002,Laptop 2,Electronics,Consumer Electronics,16465.5
+PROD0003,Laptop 3,Electronics,Consumer Electronics,8208.85
+PROD0004,Laptop 4,Electronics,Consumer Electronics,36992.04
+PROD0005,Laptop 5,Electronics,Consumer Electronics,16885.04
+PROD0006,Laptop 6,Electronics,Consumer Electronics,26663.76
+PROD0007,Laptop 7,Electronics,Consumer Electronics,15059.55
+PROD0008,Laptop 8,Electronics,Consumer Electronics,18481.05
+PROD0009,Laptop 9,Electronics,Consumer Electronics,48996.91
+PROD0010,Laptop 10,Electronics,Consumer Electronics,39858.07
+PROD0011,Laptop 11,Electronics,Consumer Electronics,34433.38
+PROD0012,Laptop 12,Electronics,Consumer Electronics,23782.05
+PROD0013,Laptop 13,Electronics,Consumer Electronics,39166.91
+PROD0014,Laptop 14,Electronics,Consumer Electronics,28923.96
+PROD0015,Laptop 15,Electronics,Consumer Electronics,29217.81
+PROD0016,Laptop 16,Electronics,Consumer Electronics,31488.36
+PROD0017,Laptop 17,Electronics,Consumer Electronics,42074.24
+PROD0018,Laptop 18,Electronics,Consumer Electronics,34068.27
+PROD0019,Laptop 19,Electronics,Consumer Electronics,47415.44
+PROD0020,Laptop 20,Electronics,Consumer Electronics,1044.97
+PROD0021,Laptop 21,Electronics,Consumer Electronics,7656.42
+PROD0022,Laptop 22,Electronics,Consumer Electronics,20577.83
+PROD0023,Laptop 23,Electronics,Consumer Electronics,46034.0
+PROD0024,Laptop 24,Electronics,Consumer Electronics,36818.28
+PROD0025,Smartphone 1,Electronics,Consumer Electronics,6990.32
+PROD0026,Smartphone 2,Electronics,Consumer Electronics,16319.97
+PROD0027,Smartphone 3,Electronics,Consumer Electronics,26321.31
+PROD0028,Smartphone 4,Electronics,Consumer Electronics,8741.8
+PROD0029,Smartphone 5,Electronics,Consumer Electronics,17182.12
+PROD0030,Smartphone 6,Electronics,Consumer Electronics,38622.29
+PROD0031,Smartphone 7,Electronics,Consumer Electronics,32201.12
+PROD0032,Smartphone 8,Electronics,Consumer Electronics,30542.82
+PROD0033,Smartphone 9,Electronics,Consumer Electronics,12401.3
+PROD0034,Smartphone 10,Electronics,Consumer Electronics,11320.87
+PROD0035,Smartphone 11,Electronics,Consumer Electronics,14950.97
+PROD0036,Smartphone 12,Electronics,Consumer Electronics,10443.16
+PROD0037,Smartphone 13,Electronics,Consumer Electronics,15920.33
+PROD0038,Smartphone 14,Electronics,Consumer Electronics,46691.65
+PROD0039,Smartphone 15,Electronics,Consumer Electronics,13745.53
+PROD0040,Smartphone 16,Electronics,Consumer Electronics,33863.45
+PROD0041,Smartphone 17,Electronics,Consumer Electronics,49010.01
+PROD0042,Smartphone 18,Electronics,Consumer Electronics,47734.98
+PROD0043,Smartphone 19,Electronics,Consumer Electronics,14593.59
+PROD0044,Smartphone 20,Electronics,Consumer Electronics,35735.65
+PROD0045,Smartphone 21,Electronics,Consumer Electronics,22174.57
+PROD0046,Smartphone 22,Electronics,Consumer Electronics,24006.06
+PROD0047,Smartphone 23,Electronics,Consumer Electronics,26975.04
+PROD0048,Smartphone 24,Electronics,Consumer Electronics,34838.95
+PROD0049,Tablet 1,Electronics,Consumer Electronics,30822.28
+PROD0050,Tablet 2,Electronics,Consumer Electronics,12198.66
+PROD0051,Tablet 3,Electronics,Consumer Electronics,26598.97
+PROD0052,Tablet 4,Electronics,Consumer Electronics,2719.31
+PROD0053,Tablet 5,Electronics,Consumer Electronics,35896.17
+PROD0054,Tablet 6,Electronics,Consumer Electronics,38561.23
+PROD0055,Tablet 7,Electronics,Consumer Electronics,27562.59
+PROD0056,Tablet 8,Electronics,Consumer Electronics,20404.68
+PROD0057,Tablet 9,Electronics,Consumer Electronics,43932.14
+PROD0058,Tablet 10,Electronics,Consumer Electronics,10052.85
+PROD0059,Tablet 11,Electronics,Consumer Electronics,16126.27
+PROD0060,Tablet 12,Electronics,Consumer Electronics,45406.05
+PROD0061,Tablet 13,Electronics,Consumer Electronics,28749.25
+PROD0062,Tablet 14,Electronics,Consumer Electronics,36183.57
+PROD0063,Tablet 15,Electronics,Consumer Electronics,45670.16
+PROD0064,Tablet 16,Electronics,Consumer Electronics,44124.02
+PROD0065,Tablet 17,Electronics,Consumer Electronics,45989.78
+PROD0066,Tablet 18,Electronics,Consumer Electronics,19910.03
+PROD0067,Tablet 19,Electronics,Consumer Electronics,46836.78
+PROD0068,Tablet 20,Electronics,Consumer Electronics,46309.38
+PROD0069,Tablet 21,Electronics,Consumer Electronics,562.43
+PROD0070,Tablet 22,Electronics,Consumer Electronics,5454.3
+PROD0071,Tablet 23,Electronics,Consumer Electronics,14299.63
+PROD0072,Tablet 24,Electronics,Consumer Electronics,27210.69
+PROD0073,Headphones 1,Electronics,Consumer Electronics,46934.17
+PROD0074,Headphones 2,Electronics,Consumer Electronics,23454.24
+PROD0075,Headphones 3,Electronics,Consumer Electronics,5721.07
+PROD0076,Headphones 4,Electronics,Consumer Electronics,22999.83
+PROD0077,Headphones 5,Electronics,Consumer Electronics,9391.33
+PROD0078,Headphones 6,Electronics,Consumer Electronics,39559.31
+PROD0079,Headphones 7,Electronics,Consumer Electronics,37888.41
+PROD0080,Headphones 8,Electronics,Consumer Electronics,42821.71
+PROD0081,Headphones 9,Electronics,Consumer Electronics,41366.79
+PROD0082,Headphones 10,Electronics,Consumer Electronics,4428.21
+PROD0083,Headphones 11,Electronics,Consumer Electronics,9320.58
+PROD0084,Headphones 12,Electronics,Consumer Electronics,16247.72
+PROD0085,Headphones 13,Electronics,Consumer Electronics,13113.19
+PROD0086,Headphones 14,Electronics,Consumer Electronics,37712.46
+PROD0087,Headphones 15,Electronics,Consumer Electronics,15167.1
+PROD0088,Headphones 16,Electronics,Consumer Electronics,670.64
+PROD0089,Headphones 17,Electronics,Consumer Electronics,34669.15
+PROD0090,Headphones 18,Electronics,Consumer Electronics,5999.42
+PROD0091,Headphones 19,Electronics,Consumer Electronics,20330.29
+PROD0092,Headphones 20,Electronics,Consumer Electronics,44766.41
+PROD0093,Headphones 21,Electronics,Consumer Electronics,15617.8
+PROD0094,Headphones 22,Electronics,Consumer Electronics,45814.91
+PROD0095,Headphones 23,Electronics,Consumer Electronics,30769.81
+PROD0096,Headphones 24,Electronics,Consumer Electronics,6765.08
+PROD0097,Keyboard 1,Electronics,Consumer Electronics,37411.97
+PROD0098,Keyboard 2,Electronics,Consumer Electronics,20850.7
+PROD0099,Keyboard 3,Electronics,Consumer Electronics,23594.32
+PROD0100,Keyboard 4,Electronics,Consumer Electronics,33238.31
+PROD0101,Keyboard 5,Electronics,Consumer Electronics,12448.52
+PROD0102,Keyboard 6,Electronics,Consumer Electronics,43669.44
+PROD0103,Keyboard 7,Electronics,Consumer Electronics,22392.72
+PROD0104,Keyboard 8,Electronics,Consumer Electronics,3997.33
+PROD0105,Keyboard 9,Electronics,Consumer Electronics,3181.73
+PROD0106,Keyboard 10,Electronics,Consumer Electronics,25323.8
+PROD0107,Keyboard 11,Electronics,Consumer Electronics,7577.63
+PROD0108,Keyboard 12,Electronics,Consumer Electronics,26065.04
+PROD0109,Keyboard 13,Electronics,Consumer Electronics,10349.53
+PROD0110,Keyboard 14,Electronics,Consumer Electronics,4637.99
+PROD0111,Keyboard 15,Electronics,Consumer Electronics,40453.73
+PROD0112,Keyboard 16,Electronics,Consumer Electronics,25711.07
+PROD0113,Keyboard 17,Electronics,Consumer Electronics,2981.07
+PROD0114,Keyboard 18,Electronics,Consumer Electronics,40365.08
+PROD0115,Keyboard 19,Electronics,Consumer Electronics,19857.84
+PROD0116,Keyboard 20,Electronics,Consumer Electronics,37315.64
+PROD0117,Keyboard 21,Electronics,Consumer Electronics,2359.96
+PROD0118,Keyboard 22,Electronics,Consumer Electronics,3281.62
+PROD0119,Keyboard 23,Electronics,Consumer Electronics,46735.68
+PROD0120,Keyboard 24,Electronics,Consumer Electronics,46695.4
+PROD0121,Mouse 1,Electronics,Consumer Electronics,20502.46
+PROD0122,Mouse 2,Electronics,Consumer Electronics,38314.8
+PROD0123,Mouse 3,Electronics,Consumer Electronics,32329.45
+PROD0124,Mouse 4,Electronics,Consumer Electronics,49643.54
+PROD0125,Mouse 5,Electronics,Consumer Electronics,43494.05
+PROD0126,Mouse 6,Electronics,Consumer Electronics,18844.71
+PROD0127,Mouse 7,Electronics,Consumer Electronics,33123.45
+PROD0128,Mouse 8,Electronics,Consumer Electronics,32711.35
+PROD0129,Mouse 9,Electronics,Consumer Electronics,9005.83
+PROD0130,Mouse 10,Electronics,Consumer Electronics,26489.24
+PROD0131,Mouse 11,Electronics,Consumer Electronics,11212.24
+PROD0132,Mouse 12,Electronics,Consumer Electronics,1234.49
+PROD0133,Mouse 13,Electronics,Consumer Electronics,33707.64
+PROD0134,Mouse 14,Electronics,Consumer Electronics,26643.49
+PROD0135,Mouse 15,Electronics,Consumer Electronics,12450.85
+PROD0136,Mouse 16,Electronics,Consumer Electronics,13854.92
+PROD0137,Mouse 17,Electronics,Consumer Electronics,36278.69
+PROD0138,Mouse 18,Electronics,Consumer Electronics,40492.96
+PROD0139,Mouse 19,Electronics,Consumer Electronics,38326.07
+PROD0140,Mouse 20,Electronics,Consumer Electronics,880.73
+PROD0141,Mouse 21,Electronics,Consumer Electronics,5134.75
+PROD0142,Mouse 22,Electronics,Consumer Electronics,29929.47
+PROD0143,Mouse 23,Electronics,Consumer Electronics,2528.95
+PROD0144,Mouse 24,Electronics,Consumer Electronics,20173.04
+PROD0145,Monitor 1,Electronics,Consumer Electronics,10941.73
+PROD0146,Monitor 2,Electronics,Consumer Electronics,2916.56
+PROD0147,Monitor 3,Electronics,Consumer Electronics,14534.25
+PROD0148,Monitor 4,Electronics,Consumer Electronics,36602.72
+PROD0149,Monitor 5,Electronics,Consumer Electronics,29936.09
+PROD0150,Monitor 6,Electronics,Consumer Electronics,16101.19
+PROD0151,Monitor 7,Electronics,Consumer Electronics,7248.7
+PROD0152,Monitor 8,Electronics,Consumer Electronics,11130.03
+PROD0153,Monitor 9,Electronics,Consumer Electronics,3141.79
+PROD0154,Monitor 10,Electronics,Consumer Electronics,43997.72
+PROD0155,Monitor 11,Electronics,Consumer Electronics,31337.06
+PROD0156,Monitor 12,Electronics,Consumer Electronics,24831.48
+PROD0157,Monitor 13,Electronics,Consumer Electronics,47085.16
+PROD0158,Monitor 14,Electronics,Consumer Electronics,39311.65
+PROD0159,Monitor 15,Electronics,Consumer Electronics,20874.6
+PROD0160,Monitor 16,Electronics,Consumer Electronics,18885.36
+PROD0161,Monitor 17,Electronics,Consumer Electronics,23728.59
+PROD0162,Monitor 18,Electronics,Consumer Electronics,15106.75
+PROD0163,Monitor 19,Electronics,Consumer Electronics,40308.23
+PROD0164,Monitor 20,Electronics,Consumer Electronics,28163.06
+PROD0165,Monitor 21,Electronics,Consumer Electronics,27908.61
+PROD0166,Monitor 22,Electronics,Consumer Electronics,12218.64
+PROD0167,Monitor 23,Electronics,Consumer Electronics,32370.62
+PROD0168,Monitor 24,Electronics,Consumer Electronics,42371.96
+PROD0169,Smartwatch 1,Electronics,Consumer Electronics,36256.78
+PROD0170,Smartwatch 2,Electronics,Consumer Electronics,13496.23
+PROD0171,Smartwatch 3,Electronics,Consumer Electronics,30185.81
+PROD0172,Smartwatch 4,Electronics,Consumer Electronics,9489.35
+PROD0173,Smartwatch 5,Electronics,Consumer Electronics,36242.83
+PROD0174,Smartwatch 6,Electronics,Consumer Electronics,24021.77
+PROD0175,Smartwatch 7,Electronics,Consumer Electronics,16714.92
+PROD0176,Smartwatch 8,Electronics,Consumer Electronics,865.15
+PROD0177,Smartwatch 9,Electronics,Consumer Electronics,48107.67
+PROD0178,Smartwatch 10,Electronics,Consumer Electronics,49978.64
+PROD0179,Smartwatch 11,Electronics,Consumer Electronics,12205.4
+PROD0180,Smartwatch 12,Electronics,Consumer Electronics,10305.21
+PROD0181,Smartwatch 13,Electronics,Consumer Electronics,27648.76
+PROD0182,Smartwatch 14,Electronics,Consumer Electronics,19095.02
+PROD0183,Smartwatch 15,Electronics,Consumer Electronics,18027.05
+PROD0184,Smartwatch 16,Electronics,Consumer Electronics,25689.55
+PROD0185,Smartwatch 17,Electronics,Consumer Electronics,5020.55
+PROD0186,Smartwatch 18,Electronics,Consumer Electronics,23527.57
+PROD0187,Smartwatch 19,Electronics,Consumer Electronics,45725.09
+PROD0188,Smartwatch 20,Electronics,Consumer Electronics,20755.12
+PROD0189,Smartwatch 21,Electronics,Consumer Electronics,11141.58
+PROD0190,Smartwatch 22,Electronics,Consumer Electronics,13112.63
+PROD0191,Smartwatch 23,Electronics,Consumer Electronics,28999.23
+PROD0192,Smartwatch 24,Electronics,Consumer Electronics,7705.33
+PROD0193,T-Shirt 1,Clothing,Apparel,19054.0
+PROD0194,T-Shirt 2,Clothing,Apparel,25015.14
+PROD0195,T-Shirt 3,Clothing,Apparel,34273.85
+PROD0196,T-Shirt 4,Clothing,Apparel,41097.44
+PROD0197,T-Shirt 5,Clothing,Apparel,32120.55
+PROD0198,T-Shirt 6,Clothing,Apparel,8494.86
+PROD0199,T-Shirt 7,Clothing,Apparel,8546.36
+PROD0200,T-Shirt 8,Clothing,Apparel,24466.98
+PROD0201,T-Shirt 9,Clothing,Apparel,27152.63
+PROD0202,T-Shirt 10,Clothing,Apparel,3030.73
+PROD0203,T-Shirt 11,Clothing,Apparel,42350.2
+PROD0204,T-Shirt 12,Clothing,Apparel,33443.96
+PROD0205,T-Shirt 13,Clothing,Apparel,20678.37
+PROD0206,T-Shirt 14,Clothing,Apparel,11648.53
+PROD0207,T-Shirt 15,Clothing,Apparel,556.16
+PROD0208,T-Shirt 16,Clothing,Apparel,18722.71
+PROD0209,T-Shirt 17,Clothing,Apparel,33371.06
+PROD0210,T-Shirt 18,Clothing,Apparel,24211.89
+PROD0211,T-Shirt 19,Clothing,Apparel,429.96
+PROD0212,T-Shirt 20,Clothing,Apparel,691.36
+PROD0213,T-Shirt 21,Clothing,Apparel,13809.56
+PROD0214,T-Shirt 22,Clothing,Apparel,955.42
+PROD0215,T-Shirt 23,Clothing,Apparel,33734.24
+PROD0216,T-Shirt 24,Clothing,Apparel,45497.69
+PROD0217,Jeans 1,Clothing,Apparel,4906.06
+PROD0218,Jeans 2,Clothing,Apparel,9677.41
+PROD0219,Jeans 3,Clothing,Apparel,40779.2
+PROD0220,Jeans 4,Clothing,Apparel,19905.13
+PROD0221,Jeans 5,Clothing,Apparel,20360.77
+PROD0222,Jeans 6,Clothing,Apparel,49512.63
+PROD0223,Jeans 7,Clothing,Apparel,34233.68
+PROD0224,Jeans 8,Clothing,Apparel,32721.41
+PROD0225,Jeans 9,Clothing,Apparel,38003.33
+PROD0226,Jeans 10,Clothing,Apparel,19025.27
+PROD0227,Jeans 11,Clothing,Apparel,2900.14
+PROD0228,Jeans 12,Clothing,Apparel,8652.04
+PROD0229,Jeans 13,Clothing,Apparel,21752.09
+PROD0230,Jeans 14,Clothing,Apparel,28336.25
+PROD0231,Jeans 15,Clothing,Apparel,4858.56
+PROD0232,Jeans 16,Clothing,Apparel,2223.33
+PROD0233,Jeans 17,Clothing,Apparel,43419.03
+PROD0234,Jeans 18,Clothing,Apparel,23827.46
+PROD0235,Jeans 19,Clothing,Apparel,3809.97
+PROD0236,Jeans 20,Clothing,Apparel,44975.65
+PROD0237,Jeans 21,Clothing,Apparel,1741.8
+PROD0238,Jeans 22,Clothing,Apparel,15792.79
+PROD0239,Jeans 23,Clothing,Apparel,29393.1
+PROD0240,Jeans 24,Clothing,Apparel,35664.3
+PROD0241,Jacket 1,Clothing,Apparel,3939.18
+PROD0242,Jacket 2,Clothing,Apparel,12099.56
+PROD0243,Jacket 3,Clothing,Apparel,19518.91
+PROD0244,Jacket 4,Clothing,Apparel,16653.32
+PROD0245,Jacket 5,Clothing,Apparel,7083.53
+PROD0246,Jacket 6,Clothing,Apparel,36235.76
+PROD0247,Jacket 7,Clothing,Apparel,48718.73
+PROD0248,Jacket 8,Clothing,Apparel,21910.7
+PROD0249,Jacket 9,Clothing,Apparel,17095.58
+PROD0250,Jacket 10,Clothing,Apparel,47747.43
+PROD0251,Jacket 11,Clothing,Apparel,38700.39
+PROD0252,Jacket 12,Clothing,Apparel,13739.02
+PROD0253,Jacket 13,Clothing,Apparel,24581.11
+PROD0254,Jacket 14,Clothing,Apparel,47063.03
+PROD0255,Jacket 15,Clothing,Apparel,34016.77
+PROD0256,Jacket 16,Clothing,Apparel,4376.14
+PROD0257,Jacket 17,Clothing,Apparel,39922.95
+PROD0258,Jacket 18,Clothing,Apparel,4193.7
+PROD0259,Jacket 19,Clothing,Apparel,35612.69
+PROD0260,Jacket 20,Clothing,Apparel,37008.8
+PROD0261,Jacket 21,Clothing,Apparel,5416.89
+PROD0262,Jacket 22,Clothing,Apparel,15482.55
+PROD0263,Jacket 23,Clothing,Apparel,13561.35
+PROD0264,Jacket 24,Clothing,Apparel,9450.85
+PROD0265,Hoodie 1,Clothing,Apparel,27781.53
+PROD0266,Hoodie 2,Clothing,Apparel,1410.47
+PROD0267,Hoodie 3,Clothing,Apparel,4743.91
+PROD0268,Hoodie 4,Clothing,Apparel,16289.07
+PROD0269,Hoodie 5,Clothing,Apparel,14663.18
+PROD0270,Hoodie 6,Clothing,Apparel,4326.51
+PROD0271,Hoodie 7,Clothing,Apparel,45269.86
+PROD0272,Hoodie 8,Clothing,Apparel,28640.83
+PROD0273,Hoodie 9,Clothing,Apparel,19098.53
+PROD0274,Hoodie 10,Clothing,Apparel,15126.45
+PROD0275,Hoodie 11,Clothing,Apparel,3257.03
+PROD0276,Hoodie 12,Clothing,Apparel,21113.01
+PROD0277,Hoodie 13,Clothing,Apparel,3938.38
+PROD0278,Hoodie 14,Clothing,Apparel,12404.84
+PROD0279,Hoodie 15,Clothing,Apparel,29730.94
+PROD0280,Hoodie 16,Clothing,Apparel,5437.92
+PROD0281,Hoodie 17,Clothing,Apparel,47446.29
+PROD0282,Hoodie 18,Clothing,Apparel,31047.59
+PROD0283,Hoodie 19,Clothing,Apparel,16544.13
+PROD0284,Hoodie 20,Clothing,Apparel,40792.23
+PROD0285,Hoodie 21,Clothing,Apparel,48713.85
+PROD0286,Hoodie 22,Clothing,Apparel,16101.19
+PROD0287,Hoodie 23,Clothing,Apparel,10122.49
+PROD0288,Hoodie 24,Clothing,Apparel,48232.27
+PROD0289,Sneakers 1,Clothing,Apparel,14643.26
+PROD0290,Sneakers 2,Clothing,Apparel,24601.26
+PROD0291,Sneakers 3,Clothing,Apparel,12196.97
+PROD0292,Sneakers 4,Clothing,Apparel,40843.08
+PROD0293,Sneakers 5,Clothing,Apparel,5783.0
+PROD0294,Sneakers 6,Clothing,Apparel,29652.13
+PROD0295,Sneakers 7,Clothing,Apparel,34117.46
+PROD0296,Sneakers 8,Clothing,Apparel,47654.93
+PROD0297,Sneakers 9,Clothing,Apparel,35447.52
+PROD0298,Sneakers 10,Clothing,Apparel,14637.43
+PROD0299,Sneakers 11,Clothing,Apparel,40966.38
+PROD0300,Sneakers 12,Clothing,Apparel,20516.17
+PROD0301,Sneakers 13,Clothing,Apparel,31703.47
+PROD0302,Sneakers 14,Clothing,Apparel,32967.28
+PROD0303,Sneakers 15,Clothing,Apparel,39474.93
+PROD0304,Sneakers 16,Clothing,Apparel,49535.96
+PROD0305,Sneakers 17,Clothing,Apparel,20100.17
+PROD0306,Sneakers 18,Clothing,Apparel,46027.57
+PROD0307,Sneakers 19,Clothing,Apparel,27227.9
+PROD0308,Sneakers 20,Clothing,Apparel,18040.52
+PROD0309,Sneakers 21,Clothing,Apparel,26891.61
+PROD0310,Sneakers 22,Clothing,Apparel,4340.6
+PROD0311,Sneakers 23,Clothing,Apparel,32914.32
+PROD0312,Sneakers 24,Clothing,Apparel,32385.29
+PROD0313,Shirt 1,Clothing,Apparel,49182.05
+PROD0314,Shirt 2,Clothing,Apparel,20040.93
+PROD0315,Shirt 3,Clothing,Apparel,48289.27
+PROD0316,Shirt 4,Clothing,Apparel,626.33
+PROD0317,Shirt 5,Clothing,Apparel,25582.74
+PROD0318,Shirt 6,Clothing,Apparel,29067.86
+PROD0319,Shirt 7,Clothing,Apparel,22344.35
+PROD0320,Shirt 8,Clothing,Apparel,38639.88
+PROD0321,Shirt 9,Clothing,Apparel,25073.24
+PROD0322,Shirt 10,Clothing,Apparel,1325.68
+PROD0323,Shirt 11,Clothing,Apparel,20857.17
+PROD0324,Shirt 12,Clothing,Apparel,5891.86
+PROD0325,Shirt 13,Clothing,Apparel,7169.59
+PROD0326,Shirt 14,Clothing,Apparel,22821.1
+PROD0327,Shirt 15,Clothing,Apparel,24198.01
+PROD0328,Shirt 16,Clothing,Apparel,21964.48
+PROD0329,Shirt 17,Clothing,Apparel,16013.58
+PROD0330,Shirt 18,Clothing,Apparel,40528.28
+PROD0331,Shirt 19,Clothing,Apparel,42474.08
+PROD0332,Shirt 20,Clothing,Apparel,33889.25
+PROD0333,Shirt 21,Clothing,Apparel,49196.63
+PROD0334,Shirt 22,Clothing,Apparel,8805.22
+PROD0335,Shirt 23,Clothing,Apparel,28036.46
+PROD0336,Shirt 24,Clothing,Apparel,11669.59
+PROD0337,Dress 1,Clothing,Apparel,9304.14
+PROD0338,Dress 2,Clothing,Apparel,21663.51
+PROD0339,Dress 3,Clothing,Apparel,30743.94
+PROD0340,Dress 4,Clothing,Apparel,29650.94
+PROD0341,Dress 5,Clothing,Apparel,35266.31
+PROD0342,Dress 6,Clothing,Apparel,37641.04
+PROD0343,Dress 7,Clothing,Apparel,3221.93
+PROD0344,Dress 8,Clothing,Apparel,43611.77
+PROD0345,Dress 9,Clothing,Apparel,16366.65
+PROD0346,Dress 10,Clothing,Apparel,13191.43
+PROD0347,Dress 11,Clothing,Apparel,26432.98
+PROD0348,Dress 12,Clothing,Apparel,29888.84
+PROD0349,Dress 13,Clothing,Apparel,29391.54
+PROD0350,Dress 14,Clothing,Apparel,42291.34
+PROD0351,Dress 15,Clothing,Apparel,40705.54
+PROD0352,Dress 16,Clothing,Apparel,14942.5
+PROD0353,Dress 17,Clothing,Apparel,4329.12
+PROD0354,Dress 18,Clothing,Apparel,5981.3
+PROD0355,Dress 19,Clothing,Apparel,9233.92
+PROD0356,Dress 20,Clothing,Apparel,25590.16
+PROD0357,Dress 21,Clothing,Apparel,6979.58
+PROD0358,Dress 22,Clothing,Apparel,9369.11
+PROD0359,Dress 23,Clothing,Apparel,34702.3
+PROD0360,Dress 24,Clothing,Apparel,49994.99
+PROD0361,Chair 1,Home,Home & Living,24533.14
+PROD0362,Chair 2,Home,Home & Living,15797.54
+PROD0363,Chair 3,Home,Home & Living,2775.2
+PROD0364,Chair 4,Home,Home & Living,578.21
+PROD0365,Chair 5,Home,Home & Living,40779.28
+PROD0366,Chair 6,Home,Home & Living,25321.36
+PROD0367,Chair 7,Home,Home & Living,34266.36
+PROD0368,Chair 8,Home,Home & Living,42010.6
+PROD0369,Chair 9,Home,Home & Living,4225.26
+PROD0370,Chair 10,Home,Home & Living,38076.73
+PROD0371,Chair 11,Home,Home & Living,13815.16
+PROD0372,Chair 12,Home,Home & Living,8493.63
+PROD0373,Chair 13,Home,Home & Living,37151.66
+PROD0374,Chair 14,Home,Home & Living,27531.34
+PROD0375,Chair 15,Home,Home & Living,5798.91
+PROD0376,Chair 16,Home,Home & Living,41181.81
+PROD0377,Chair 17,Home,Home & Living,41148.29
+PROD0378,Chair 18,Home,Home & Living,35977.11
+PROD0379,Chair 19,Home,Home & Living,49489.81
+PROD0380,Chair 20,Home,Home & Living,41520.53
+PROD0381,Chair 21,Home,Home & Living,14955.68
+PROD0382,Chair 22,Home,Home & Living,22541.64
+PROD0383,Chair 23,Home,Home & Living,40854.76
+PROD0384,Chair 24,Home,Home & Living,49698.49
+PROD0385,Table 1,Home,Home & Living,11923.61
+PROD0386,Table 2,Home,Home & Living,29437.4
+PROD0387,Table 3,Home,Home & Living,35566.62
+PROD0388,Table 4,Home,Home & Living,8382.48
+PROD0389,Table 5,Home,Home & Living,10410.32
+PROD0390,Table 6,Home,Home & Living,3061.96
+PROD0391,Table 7,Home,Home & Living,14126.14
+PROD0392,Table 8,Home,Home & Living,16250.32
+PROD0393,Table 9,Home,Home & Living,14537.73
+PROD0394,Table 10,Home,Home & Living,42915.04
+PROD0395,Table 11,Home,Home & Living,33997.04
+PROD0396,Table 12,Home,Home & Living,48142.32
+PROD0397,Table 13,Home,Home & Living,45946.56
+PROD0398,Table 14,Home,Home & Living,43365.67
+PROD0399,Table 15,Home,Home & Living,43317.33
+PROD0400,Table 16,Home,Home & Living,35598.6
+PROD0401,Table 17,Home,Home & Living,38097.53
+PROD0402,Table 18,Home,Home & Living,24523.99
+PROD0403,Table 19,Home,Home & Living,13508.99
+PROD0404,Table 20,Home,Home & Living,22654.39
+PROD0405,Table 21,Home,Home & Living,44018.24
+PROD0406,Table 22,Home,Home & Living,25829.11
+PROD0407,Table 23,Home,Home & Living,46823.17
+PROD0408,Table 24,Home,Home & Living,47517.68
+PROD0409,Lamp 1,Home,Home & Living,223.41
+PROD0410,Lamp 2,Home,Home & Living,36662.93
+PROD0411,Lamp 3,Home,Home & Living,22976.62
+PROD0412,Lamp 4,Home,Home & Living,17975.31
+PROD0413,Lamp 5,Home,Home & Living,26767.78
+PROD0414,Lamp 6,Home,Home & Living,21539.19
+PROD0415,Lamp 7,Home,Home & Living,13499.99
+PROD0416,Lamp 8,Home,Home & Living,16953.98
+PROD0417,Lamp 9,Home,Home & Living,28350.49
+PROD0418,Lamp 10,Home,Home & Living,17252.61
+PROD0419,Lamp 11,Home,Home & Living,2515.62
+PROD0420,Lamp 12,Home,Home & Living,39216.1
+PROD0421,Lamp 13,Home,Home & Living,6299.44
+PROD0422,Lamp 14,Home,Home & Living,22120.17
+PROD0423,Lamp 15,Home,Home & Living,47905.79
+PROD0424,Lamp 16,Home,Home & Living,34460.73
+PROD0425,Lamp 17,Home,Home & Living,32534.86
+PROD0426,Lamp 18,Home,Home & Living,46643.01
+PROD0427,Lamp 19,Home,Home & Living,32763.94
+PROD0428,Lamp 20,Home,Home & Living,18655.0
+PROD0429,Lamp 21,Home,Home & Living,8359.7
+PROD0430,Lamp 22,Home,Home & Living,15344.91
+PROD0431,Lamp 23,Home,Home & Living,11783.78
+PROD0432,Lamp 24,Home,Home & Living,35214.53
+PROD0433,Cushion 1,Home,Home & Living,23892.65
+PROD0434,Cushion 2,Home,Home & Living,11386.92
+PROD0435,Cushion 3,Home,Home & Living,563.42
+PROD0436,Cushion 4,Home,Home & Living,40873.74
+PROD0437,Cushion 5,Home,Home & Living,21173.47
+PROD0438,Cushion 6,Home,Home & Living,3634.33
+PROD0439,Cushion 7,Home,Home & Living,36565.09
+PROD0440,Cushion 8,Home,Home & Living,15736.24
+PROD0441,Cushion 9,Home,Home & Living,6942.75
+PROD0442,Cushion 10,Home,Home & Living,37682.57
+PROD0443,Cushion 11,Home,Home & Living,49647.71
+PROD0444,Cushion 12,Home,Home & Living,26572.36
+PROD0445,Cushion 13,Home,Home & Living,32536.01
+PROD0446,Cushion 14,Home,Home & Living,36149.36
+PROD0447,Cushion 15,Home,Home & Living,7653.57
+PROD0448,Cushion 16,Home,Home & Living,34359.65
+PROD0449,Cushion 17,Home,Home & Living,4425.73
+PROD0450,Cushion 18,Home,Home & Living,37647.04
+PROD0451,Cushion 19,Home,Home & Living,19263.19
+PROD0452,Cushion 20,Home,Home & Living,15793.73
+PROD0453,Cushion 21,Home,Home & Living,13920.69
+PROD0454,Cushion 22,Home,Home & Living,27714.49
+PROD0455,Cushion 23,Home,Home & Living,30418.9
+PROD0456,Cushion 24,Home,Home & Living,34554.76
+PROD0457,Bedsheet 1,Home,Home & Living,32954.43
+PROD0458,Bedsheet 2,Home,Home & Living,25935.68
+PROD0459,Bedsheet 3,Home,Home & Living,37417.4
+PROD0460,Bedsheet 4,Home,Home & Living,2823.0
+PROD0461,Bedsheet 5,Home,Home & Living,47738.11
+PROD0462,Bedsheet 6,Home,Home & Living,5725.91
+PROD0463,Bedsheet 7,Home,Home & Living,29737.1
+PROD0464,Bedsheet 8,Home,Home & Living,48887.08
+PROD0465,Bedsheet 9,Home,Home & Living,46702.83
+PROD0466,Bedsheet 10,Home,Home & Living,43054.62
+PROD0467,Bedsheet 11,Home,Home & Living,18334.08
+PROD0468,Bedsheet 12,Home,Home & Living,38160.02
+PROD0469,Bedsheet 13,Home,Home & Living,38541.32
+PROD0470,Bedsheet 14,Home,Home & Living,3469.88
+PROD0471,Bedsheet 15,Home,Home & Living,2087.36
+PROD0472,Bedsheet 16,Home,Home & Living,39485.57
+PROD0473,Bedsheet 17,Home,Home & Living,31465.68
+PROD0474,Bedsheet 18,Home,Home & Living,20830.06
+PROD0475,Bedsheet 19,Home,Home & Living,4213.15
+PROD0476,Bedsheet 20,Home,Home & Living,30840.75
+PROD0477,Bedsheet 21,Home,Home & Living,15564.35
+PROD0478,Bedsheet 22,Home,Home & Living,10239.55
+PROD0479,Bedsheet 23,Home,Home & Living,26865.87
+PROD0480,Bedsheet 24,Home,Home & Living,31751.28
+PROD0481,Curtains 1,Home,Home & Living,34084.68
+PROD0482,Curtains 2,Home,Home & Living,34963.93
+PROD0483,Curtains 3,Home,Home & Living,42338.76
+PROD0484,Curtains 4,Home,Home & Living,4402.02
+PROD0485,Curtains 5,Home,Home & Living,22723.25
+PROD0486,Curtains 6,Home,Home & Living,15533.57
+PROD0487,Curtains 7,Home,Home & Living,37058.84
+PROD0488,Curtains 8,Home,Home & Living,35424.24
+PROD0489,Curtains 9,Home,Home & Living,8275.25
+PROD0490,Curtains 10,Home,Home & Living,26197.97
+PROD0491,Curtains 11,Home,Home & Living,36066.2
+PROD0492,Curtains 12,Home,Home & Living,6433.84
+PROD0493,Curtains 13,Home,Home & Living,13511.35
+PROD0494,Curtains 14,Home,Home & Living,38594.37
+PROD0495,Curtains 15,Home,Home & Living,40374.68
+PROD0496,Curtains 16,Home,Home & Living,3287.21
+PROD0497,Curtains 17,Home,Home & Living,28874.92
+PROD0498,Curtains 18,Home,Home & Living,22814.37
+PROD0499,Curtains 19,Home,Home & Living,25030.54
+PROD0500,Curtains 20,Home,Home & Living,18447.62
+PROD0501,Curtains 21,Home,Home & Living,5234.96
+PROD0502,Curtains 22,Home,Home & Living,36166.64
+PROD0503,Curtains 23,Home,Home & Living,25490.36
+PROD0504,Curtains 24,Home,Home & Living,43160.13
+PROD0505,Storage Box 1,Home,Home & Living,23641.05
+PROD0506,Storage Box 2,Home,Home & Living,7589.22
+PROD0507,Storage Box 3,Home,Home & Living,42888.51
+PROD0508,Storage Box 4,Home,Home & Living,45705.99
+PROD0509,Storage Box 5,Home,Home & Living,21026.53
+PROD0510,Storage Box 6,Home,Home & Living,20871.2
+PROD0511,Storage Box 7,Home,Home & Living,13635.77
+PROD0512,Storage Box 8,Home,Home & Living,18703.13
+PROD0513,Storage Box 9,Home,Home & Living,45106.86
+PROD0514,Storage Box 10,Home,Home & Living,40236.47
+PROD0515,Storage Box 11,Home,Home & Living,47708.56
+PROD0516,Storage Box 12,Home,Home & Living,23308.2
+PROD0517,Storage Box 13,Home,Home & Living,42257.84
+PROD0518,Storage Box 14,Home,Home & Living,27699.26
+PROD0519,Storage Box 15,Home,Home & Living,10113.49
+PROD0520,Storage Box 16,Home,Home & Living,15265.07
+PROD0521,Storage Box 17,Home,Home & Living,23249.94
+PROD0522,Storage Box 18,Home,Home & Living,24718.7
+PROD0523,Storage Box 19,Home,Home & Living,9851.58
+PROD0524,Storage Box 20,Home,Home & Living,38048.06
+PROD0525,Storage Box 21,Home,Home & Living,418.26
+PROD0526,Storage Box 22,Home,Home & Living,11726.59
+PROD0527,Storage Box 23,Home,Home & Living,41994.74
+PROD0528,Storage Box 24,Home,Home & Living,47554.41
+PROD0529,Novel 1,Books,Books & Education,32899.46
+PROD0530,Novel 2,Books,Books & Education,36388.03
+PROD0531,Novel 3,Books,Books & Education,26537.74
+PROD0532,Novel 4,Books,Books & Education,24652.24
+PROD0533,Novel 5,Books,Books & Education,49848.27
+PROD0534,Novel 6,Books,Books & Education,4742.03
+PROD0535,Novel 7,Books,Books & Education,44874.64
+PROD0536,Novel 8,Books,Books & Education,35072.26
+PROD0537,Novel 9,Books,Books & Education,48730.28
+PROD0538,Novel 10,Books,Books & Education,4869.29
+PROD0539,Novel 11,Books,Books & Education,41016.15
+PROD0540,Novel 12,Books,Books & Education,28434.25
+PROD0541,Novel 13,Books,Books & Education,48214.49
+PROD0542,Novel 14,Books,Books & Education,13123.45
+PROD0543,Novel 15,Books,Books & Education,40060.76
+PROD0544,Novel 16,Books,Books & Education,36794.11
+PROD0545,Novel 17,Books,Books & Education,13670.6
+PROD0546,Novel 18,Books,Books & Education,10215.36
+PROD0547,Novel 19,Books,Books & Education,29276.93
+PROD0548,Novel 20,Books,Books & Education,8302.31
+PROD0549,Novel 21,Books,Books & Education,20384.98
+PROD0550,Novel 22,Books,Books & Education,48235.27
+PROD0551,Novel 23,Books,Books & Education,15484.56
+PROD0552,Novel 24,Books,Books & Education,6083.69
+PROD0553,Programming Book 1,Books,Books & Education,34334.14
+PROD0554,Programming Book 2,Books,Books & Education,34874.21
+PROD0555,Programming Book 3,Books,Books & Education,41812.65
+PROD0556,Programming Book 4,Books,Books & Education,4651.52
+PROD0557,Programming Book 5,Books,Books & Education,17851.56
+PROD0558,Programming Book 6,Books,Books & Education,33891.45
+PROD0559,Programming Book 7,Books,Books & Education,49534.76
+PROD0560,Programming Book 8,Books,Books & Education,20279.17
+PROD0561,Programming Book 9,Books,Books & Education,37429.11
+PROD0562,Programming Book 10,Books,Books & Education,23155.96
+PROD0563,Programming Book 11,Books,Books & Education,7075.67
+PROD0564,Programming Book 12,Books,Books & Education,41535.58
+PROD0565,Programming Book 13,Books,Books & Education,6622.69
+PROD0566,Programming Book 14,Books,Books & Education,18674.76
+PROD0567,Programming Book 15,Books,Books & Education,32269.78
+PROD0568,Programming Book 16,Books,Books & Education,13015.15
+PROD0569,Programming Book 17,Books,Books & Education,1187.83
+PROD0570,Programming Book 18,Books,Books & Education,45134.55
+PROD0571,Programming Book 19,Books,Books & Education,6526.7
+PROD0572,Programming Book 20,Books,Books & Education,41484.87
+PROD0573,Programming Book 21,Books,Books & Education,2230.55
+PROD0574,Programming Book 22,Books,Books & Education,8482.66
+PROD0575,Programming Book 23,Books,Books & Education,41102.1
+PROD0576,Programming Book 24,Books,Books & Education,1571.17
+PROD0577,Data Science Book 1,Books,Books & Education,8723.08
+PROD0578,Data Science Book 2,Books,Books & Education,9438.84
+PROD0579,Data Science Book 3,Books,Books & Education,44182.85
+PROD0580,Data Science Book 4,Books,Books & Education,30996.91
+PROD0581,Data Science Book 5,Books,Books & Education,14825.75
+PROD0582,Data Science Book 6,Books,Books & Education,27579.36
+PROD0583,Data Science Book 7,Books,Books & Education,14060.82
+PROD0584,Data Science Book 8,Books,Books & Education,10052.94
+PROD0585,Data Science Book 9,Books,Books & Education,26338.12
+PROD0586,Data Science Book 10,Books,Books & Education,40128.19
+PROD0587,Data Science Book 11,Books,Books & Education,49471.24
+PROD0588,Data Science Book 12,Books,Books & Education,18019.69
+PROD0589,Data Science Book 13,Books,Books & Education,24285.51
+PROD0590,Data Science Book 14,Books,Books & Education,25169.42
+PROD0591,Data Science Book 15,Books,Books & Education,9072.81
+PROD0592,Data Science Book 16,Books,Books & Education,11029.11
+PROD0593,Data Science Book 17,Books,Books & Education,38949.06
+PROD0594,Data Science Book 18,Books,Books & Education,49577.41
+PROD0595,Data Science Book 19,Books,Books & Education,38365.42
+PROD0596,Data Science Book 20,Books,Books & Education,48701.6
+PROD0597,Data Science Book 21,Books,Books & Education,32877.53
+PROD0598,Data Science Book 22,Books,Books & Education,40832.63
+PROD0599,Data Science Book 23,Books,Books & Education,2889.84
+PROD0600,Data Science Book 24,Books,Books & Education,11048.64

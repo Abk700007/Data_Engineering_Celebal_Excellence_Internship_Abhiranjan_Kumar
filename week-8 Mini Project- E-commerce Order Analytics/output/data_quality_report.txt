@@ -1,0 +1,354 @@
+E-COMMERCE ORDER ANALYTICS SYSTEM
+DATA QUALITY REPORT
+======================================================================
+
+Total issues found: 348
+
+1. PRODUCT NAME NORMALIZED | product_id=PROD0012 | old=  Laptop 12   | new=Laptop 12
+2. PRODUCT NAME NORMALIZED | product_id=PROD0018 | old=laptop 18 | new=Laptop 18
+3. PRODUCT NAME NORMALIZED | product_id=PROD0019 | old=  Laptop 19   | new=Laptop 19
+4. PRODUCT NAME NORMALIZED | product_id=PROD0020 | old=laptop 20 | new=Laptop 20
+5. PRODUCT NAME NORMALIZED | product_id=PROD0025 | old=SMARTPHONE 1 | new=Smartphone 1
+6. PRODUCT NAME NORMALIZED | product_id=PROD0040 | old=smartphone 16 | new=Smartphone 16
+7. PRODUCT NAME NORMALIZED | product_id=PROD0049 | old=tablet 1 | new=Tablet 1
+8. PRODUCT NAME NORMALIZED | product_id=PROD0054 | old=tablet 6 | new=Tablet 6
+9. PRODUCT NAME NORMALIZED | product_id=PROD0055 | old=  Tablet 7   | new=Tablet 7
+10. PRODUCT NAME NORMALIZED | product_id=PROD0061 | old=TABLET 13 | new=Tablet 13
+11. PRODUCT NAME NORMALIZED | product_id=PROD0084 | old=headphones 12 | new=Headphones 12
+12. PRODUCT NAME NORMALIZED | product_id=PROD0090 | old=HEADPHONES 18 | new=Headphones 18
+13. PRODUCT NAME NORMALIZED | product_id=PROD0094 | old=headphones 22 | new=Headphones 22
+14. PRODUCT NAME NORMALIZED | product_id=PROD0103 | old=KEYBOARD 7 | new=Keyboard 7
+15. PRODUCT NAME NORMALIZED | product_id=PROD0109 | old=keyboard 13 | new=Keyboard 13
+16. PRODUCT NAME NORMALIZED | product_id=PROD0120 | old=KEYBOARD 24 | new=Keyboard 24
+17. PRODUCT NAME NORMALIZED | product_id=PROD0121 | old=  Mouse 1   | new=Mouse 1
+18. PRODUCT NAME NORMALIZED | product_id=PROD0132 | old=  Mouse 12   | new=Mouse 12
+19. PRODUCT NAME NORMALIZED | product_id=PROD0138 | old=mouse 18 | new=Mouse 18
+20. PRODUCT NAME NORMALIZED | product_id=PROD0142 | old=  Mouse 22   | new=Mouse 22
+21. PRODUCT NAME NORMALIZED | product_id=PROD0160 | old=monitor 16 | new=Monitor 16
+22. PRODUCT NAME NORMALIZED | product_id=PROD0166 | old=monitor 22 | new=Monitor 22
+23. PRODUCT NAME NORMALIZED | product_id=PROD0169 | old=SMARTWATCH 1 | new=Smartwatch 1
+24. PRODUCT NAME NORMALIZED | product_id=PROD0178 | old=smartwatch 10 | new=Smartwatch 10
+25. PRODUCT NAME NORMALIZED | product_id=PROD0190 | old=smartwatch 22 | new=Smartwatch 22
+26. PRODUCT NAME NORMALIZED | product_id=PROD0203 | old=  T-Shirt 11   | new=T-Shirt 11
+27. PRODUCT NAME NORMALIZED | product_id=PROD0217 | old=jeans 1 | new=Jeans 1
+28. PRODUCT NAME NORMALIZED | product_id=PROD0218 | old=jeans 2 | new=Jeans 2
+29. PRODUCT NAME NORMALIZED | product_id=PROD0226 | old=JEANS 10 | new=Jeans 10
+30. PRODUCT NAME NORMALIZED | product_id=PROD0228 | old=  Jeans 12   | new=Jeans 12
+31. PRODUCT NAME NORMALIZED | product_id=PROD0235 | old=  Jeans 19   | new=Jeans 19
+32. PRODUCT NAME NORMALIZED | product_id=PROD0248 | old=JACKET 8 | new=Jacket 8
+33. PRODUCT NAME NORMALIZED | product_id=PROD0252 | old=  Jacket 12   | new=Jacket 12
+34. PRODUCT NAME NORMALIZED | product_id=PROD0262 | old=  Jacket 22   | new=Jacket 22
+35. PRODUCT NAME NORMALIZED | product_id=PROD0264 | old=jacket 24 | new=Jacket 24
+36. PRODUCT NAME NORMALIZED | product_id=PROD0274 | old=hoodie 10 | new=Hoodie 10
+37. PRODUCT NAME NORMALIZED | product_id=PROD0286 | old=hoodie 22 | new=Hoodie 22
+38. PRODUCT NAME NORMALIZED | product_id=PROD0304 | old=SNEAKERS 16 | new=Sneakers 16
+39. PRODUCT NAME NORMALIZED | product_id=PROD0313 | old=  Shirt 1   | new=Shirt 1
+40. PRODUCT NAME NORMALIZED | product_id=PROD0323 | old=shirt 11 | new=Shirt 11
+41. PRODUCT NAME NORMALIZED | product_id=PROD0331 | old=shirt 19 | new=Shirt 19
+42. PRODUCT NAME NORMALIZED | product_id=PROD0339 | old=  Dress 3   | new=Dress 3
+43. PRODUCT NAME NORMALIZED | product_id=PROD0344 | old=dress 8 | new=Dress 8
+44. PRODUCT NAME NORMALIZED | product_id=PROD0354 | old=dress 18 | new=Dress 18
+45. PRODUCT NAME NORMALIZED | product_id=PROD0362 | old=chair 2 | new=Chair 2
+46. PRODUCT NAME NORMALIZED | product_id=PROD0365 | old=chair 5 | new=Chair 5
+47. PRODUCT NAME NORMALIZED | product_id=PROD0370 | old=  Chair 10   | new=Chair 10
+48. PRODUCT NAME NORMALIZED | product_id=PROD0375 | old=chair 15 | new=Chair 15
+49. PRODUCT NAME NORMALIZED | product_id=PROD0378 | old=  Chair 18   | new=Chair 18
+50. PRODUCT NAME NORMALIZED | product_id=PROD0380 | old=chair 20 | new=Chair 20
+51. PRODUCT NAME NORMALIZED | product_id=PROD0389 | old=table 5 | new=Table 5
+52. PRODUCT NAME NORMALIZED | product_id=PROD0396 | old=TABLE 12 | new=Table 12
+53. PRODUCT NAME NORMALIZED | product_id=PROD0399 | old=table 15 | new=Table 15
+54. PRODUCT NAME NORMALIZED | product_id=PROD0406 | old=TABLE 22 | new=Table 22
+55. PRODUCT NAME NORMALIZED | product_id=PROD0413 | old=LAMP 5 | new=Lamp 5
+56. PRODUCT NAME NORMALIZED | product_id=PROD0420 | old=LAMP 12 | new=Lamp 12
+57. PRODUCT NAME NORMALIZED | product_id=PROD0423 | old=  Lamp 15   | new=Lamp 15
+58. PRODUCT NAME NORMALIZED | product_id=PROD0425 | old=lamp 17 | new=Lamp 17
+59. PRODUCT NAME NORMALIZED | product_id=PROD0433 | old=  Cushion 1   | new=Cushion 1
+60. PRODUCT NAME NORMALIZED | product_id=PROD0434 | old=cushion 2 | new=Cushion 2
+61. PRODUCT NAME NORMALIZED | product_id=PROD0438 | old=cushion 6 | new=Cushion 6
+62. PRODUCT NAME NORMALIZED | product_id=PROD0440 | old=cushion 8 | new=Cushion 8
+63. PRODUCT NAME NORMALIZED | product_id=PROD0443 | old=cushion 11 | new=Cushion 11
+64. PRODUCT NAME NORMALIZED | product_id=PROD0444 | old=cushion 12 | new=Cushion 12
+65. PRODUCT NAME NORMALIZED | product_id=PROD0445 | old=  Cushion 13   | new=Cushion 13
+66. PRODUCT NAME NORMALIZED | product_id=PROD0450 | old=cushion 18 | new=Cushion 18
+67. PRODUCT NAME NORMALIZED | product_id=PROD0453 | old=cushion 21 | new=Cushion 21
+68. PRODUCT NAME NORMALIZED | product_id=PROD0454 | old=CUSHION 22 | new=Cushion 22
+69. PRODUCT NAME NORMALIZED | product_id=PROD0466 | old=bedsheet 10 | new=Bedsheet 10
+70. PRODUCT NAME NORMALIZED | product_id=PROD0470 | old=  Bedsheet 14   | new=Bedsheet 14
+71. PRODUCT NAME NORMALIZED | product_id=PROD0472 | old=BEDSHEET 16 | new=Bedsheet 16
+72. PRODUCT NAME NORMALIZED | product_id=PROD0482 | old=CURTAINS 2 | new=Curtains 2
+73. PRODUCT NAME NORMALIZED | product_id=PROD0484 | old=CURTAINS 4 | new=Curtains 4
+74. PRODUCT NAME NORMALIZED | product_id=PROD0488 | old=curtains 8 | new=Curtains 8
+75. PRODUCT NAME NORMALIZED | product_id=PROD0495 | old=  Curtains 15   | new=Curtains 15
+76. PRODUCT NAME NORMALIZED | product_id=PROD0498 | old=CURTAINS 18 | new=Curtains 18
+77. PRODUCT NAME NORMALIZED | product_id=PROD0504 | old=  Curtains 24   | new=Curtains 24
+78. PRODUCT NAME NORMALIZED | product_id=PROD0512 | old=STORAGE BOX 8 | new=Storage Box 8
+79. PRODUCT NAME NORMALIZED | product_id=PROD0516 | old=STORAGE BOX 12 | new=Storage Box 12
+80. PRODUCT NAME NORMALIZED | product_id=PROD0519 | old=  Storage Box 15   | new=Storage Box 15
+81. PRODUCT NAME NORMALIZED | product_id=PROD0529 | old=  Novel 1   | new=Novel 1
+82. PRODUCT NAME NORMALIZED | product_id=PROD0531 | old=novel 3 | new=Novel 3
+83. PRODUCT NAME NORMALIZED | product_id=PROD0533 | old=NOVEL 5 | new=Novel 5
+84. PRODUCT NAME NORMALIZED | product_id=PROD0538 | old=NOVEL 10 | new=Novel 10
+85. PRODUCT NAME NORMALIZED | product_id=PROD0539 | old=novel 11 | new=Novel 11
+86. PRODUCT NAME NORMALIZED | product_id=PROD0540 | old=NOVEL 12 | new=Novel 12
+87. PRODUCT NAME NORMALIZED | product_id=PROD0546 | old=NOVEL 18 | new=Novel 18
+88. PRODUCT NAME NORMALIZED | product_id=PROD0555 | old=  Programming Book 3   | new=Programming Book 3
+89. PRODUCT NAME NORMALIZED | product_id=PROD0560 | old=  Programming Book 8   | new=Programming Book 8
+90. PRODUCT NAME NORMALIZED | product_id=PROD0564 | old=  Programming Book 12   | new=Programming Book 12
+91. PRODUCT NAME NORMALIZED | product_id=PROD0570 | old=PROGRAMMING BOOK 18 | new=Programming Book 18
+92. PRODUCT NAME NORMALIZED | product_id=PROD0580 | old=  Data Science Book 4   | new=Data Science Book 4
+93. PRODUCT NAME NORMALIZED | product_id=PROD0583 | old=DATA SCIENCE BOOK 7 | new=Data Science Book 7
+94. PRODUCT NAME NORMALIZED | product_id=PROD0584 | old=data science book 8 | new=Data Science Book 8
+95. PRODUCT NAME NORMALIZED | product_id=PROD0594 | old=DATA SCIENCE BOOK 18 | new=Data Science Book 18
+96. PRODUCT NAME NORMALIZED | product_id=PROD0597 | old=data science book 21 | new=Data Science Book 21
+97. DATE FORMAT FIXED | order_id=ORD00001 | old=29-10-2025 16:43:14 | new=2025-10-29 16:43:14
+98. MISSING CUSTOMER ID | order_id=ORD00001
+99. DATE FORMAT FIXED | order_id=ORD00002 | old=17-05-2025 18:44:55 | new=2025-05-17 18:44:55
+100. MISSING CUSTOMER ID | order_id=ORD00002
+101. DATE FORMAT FIXED | order_id=ORD00003 | old=05-09-2025 00:01:51 | new=2025-09-05 00:01:51
+102. MISSING CUSTOMER ID | order_id=ORD00003
+103. DATE FORMAT FIXED | order_id=ORD00004 | old=22-01-2025 21:48:30 | new=2025-01-22 21:48:30
+104. MISSING CUSTOMER ID | order_id=ORD00004
+105. DATE FORMAT FIXED | order_id=ORD00005 | old=14-03-2026 18:23:11 | new=2026-03-14 18:23:11
+106. MISSING CUSTOMER ID | order_id=ORD00005
+107. DATE FORMAT FIXED | order_id=ORD00006 | old=27-05-2025 04:55:47 | new=2025-05-27 04:55:47
+108. MISSING CUSTOMER ID | order_id=ORD00006
+109. DATE FORMAT FIXED | order_id=ORD00007 | old=29-08-2025 01:10:00 | new=2025-08-29 01:10:00
+110. MISSING CUSTOMER ID | order_id=ORD00007
+111. DATE FORMAT FIXED | order_id=ORD00008 | old=30-01-2025 11:41:43 | new=2025-01-30 11:41:43
+112. MISSING CUSTOMER ID | order_id=ORD00008
+113. DATE FORMAT FIXED | order_id=ORD00009 | old=30-06-2025 16:24:49 | new=2025-06-30 16:24:49
+114. MISSING CUSTOMER ID | order_id=ORD00009
+115. DATE FORMAT FIXED | order_id=ORD00010 | old=16-01-2025 11:29:04 | new=2025-01-16 11:29:04
+116. MISSING CUSTOMER ID | order_id=ORD00010
+117. DATE FORMAT FIXED | order_id=ORD00011 | old=01-01-2025 12:44:28 | new=2025-01-01 12:44:28
+118. MISSING CUSTOMER ID | order_id=ORD00011
+119. DATE FORMAT FIXED | order_id=ORD00012 | old=06-06-2025 11:34:05 | new=2025-06-06 11:34:05
+120. MISSING CUSTOMER ID | order_id=ORD00012
+121. DATE FORMAT FIXED | order_id=ORD00013 | old=11-07-2026 20:41:10 | new=2026-07-11 20:41:10
+122. MISSING CUSTOMER ID | order_id=ORD00013
+123. DATE FORMAT FIXED | order_id=ORD00014 | old=16-02-2025 06:12:13 | new=2025-02-16 06:12:13
+124. MISSING CUSTOMER ID | order_id=ORD00014
+125. DATE FORMAT FIXED | order_id=ORD00015 | old=01-04-2026 15:11:15 | new=2026-04-01 15:11:15
+126. MISSING CUSTOMER ID | order_id=ORD00015
+127. DATE FORMAT FIXED | order_id=ORD00016 | old=13-02-2026 18:50:51 | new=2026-02-13 18:50:51
+128. MISSING CUSTOMER ID | order_id=ORD00016
+129. DATE FORMAT FIXED | order_id=ORD00017 | old=18-10-2025 04:14:12 | new=2025-10-18 04:14:12
+130. MISSING CUSTOMER ID | order_id=ORD00017
+131. DATE FORMAT FIXED | order_id=ORD00018 | old=20-03-2025 11:22:34 | new=2025-03-20 11:22:34
+132. MISSING CUSTOMER ID | order_id=ORD00018
+133. DATE FORMAT FIXED | order_id=ORD00019 | old=08-09-2025 13:45:34 | new=2025-09-08 13:45:34
+134. MISSING CUSTOMER ID | order_id=ORD00019
+135. DATE FORMAT FIXED | order_id=ORD00020 | old=23-07-2026 20:01:52 | new=2026-07-23 20:01:52
+136. MISSING CUSTOMER ID | order_id=ORD00020
+137. DATE FORMAT FIXED | order_id=ORD00021 | old=20-05-2026 05:35:50 | new=2026-05-20 05:35:50
+138. MISSING CUSTOMER ID | order_id=ORD00021
+139. DATE FORMAT FIXED | order_id=ORD00022 | old=04-07-2026 06:50:42 | new=2026-07-04 06:50:42
+140. MISSING CUSTOMER ID | order_id=ORD00022
+141. DATE FORMAT FIXED | order_id=ORD00023 | old=05-10-2025 03:42:37 | new=2025-10-05 03:42:37
+142. MISSING CUSTOMER ID | order_id=ORD00023
+143. DATE FORMAT FIXED | order_id=ORD00024 | old=17-05-2025 04:47:28 | new=2025-05-17 04:47:28
+144. MISSING CUSTOMER ID | order_id=ORD00024
+145. DATE FORMAT FIXED | order_id=ORD00025 | old=25-07-2026 02:39:28 | new=2026-07-25 02:39:28
+146. MISSING CUSTOMER ID | order_id=ORD00025
+147. DATE FORMAT FIXED | order_id=ORD00026 | old=19-05-2025 00:43:21 | new=2025-05-19 00:43:21
+148. MISSING CUSTOMER ID | order_id=ORD00026
+149. DATE FORMAT FIXED | order_id=ORD00027 | old=01-11-2025 03:58:46 | new=2025-11-01 03:58:46
+150. MISSING CUSTOMER ID | order_id=ORD00027
+151. DATE FORMAT FIXED | order_id=ORD00028 | old=22-05-2025 10:14:59 | new=2025-05-22 10:14:59
+152. MISSING CUSTOMER ID | order_id=ORD00028
+153. DATE FORMAT FIXED | order_id=ORD00029 | old=20-04-2026 20:58:14 | new=2026-04-20 20:58:14
+154. MISSING CUSTOMER ID | order_id=ORD00029
+155. DATE FORMAT FIXED | order_id=ORD00030 | old=22-03-2025 20:45:19 | new=2025-03-22 20:45:19
+156. MISSING CUSTOMER ID | order_id=ORD00030
+157. DATE FORMAT FIXED | order_id=ORD00031 | old=15-09-2025 05:25:36 | new=2025-09-15 05:25:36
+158. MISSING CUSTOMER ID | order_id=ORD00031
+159. DATE FORMAT FIXED | order_id=ORD00032 | old=27-09-2025 09:00:33 | new=2025-09-27 09:00:33
+160. MISSING CUSTOMER ID | order_id=ORD00032
+161. DATE FORMAT FIXED | order_id=ORD00033 | old=10-05-2026 03:22:51 | new=2026-05-10 03:22:51
+162. MISSING CUSTOMER ID | order_id=ORD00033
+163. DATE FORMAT FIXED | order_id=ORD00034 | old=13-12-2025 21:47:07 | new=2025-12-13 21:47:07
+164. MISSING CUSTOMER ID | order_id=ORD00034
+165. DATE FORMAT FIXED | order_id=ORD00035 | old=12-06-2025 20:47:54 | new=2025-06-12 20:47:54
+166. MISSING CUSTOMER ID | order_id=ORD00035
+167. DATE FORMAT FIXED | order_id=ORD00036 | old=30-09-2025 05:26:32 | new=2025-09-30 05:26:32
+168. MISSING CUSTOMER ID | order_id=ORD00036
+169. DATE FORMAT FIXED | order_id=ORD00037 | old=14-07-2026 13:28:57 | new=2026-07-14 13:28:57
+170. MISSING CUSTOMER ID | order_id=ORD00037
+171. DATE FORMAT FIXED | order_id=ORD00038 | old=27-10-2025 18:23:20 | new=2025-10-27 18:23:20
+172. MISSING CUSTOMER ID | order_id=ORD00038
+173. DATE FORMAT FIXED | order_id=ORD00039 | old=10-05-2025 04:46:23 | new=2025-05-10 04:46:23
+174. MISSING CUSTOMER ID | order_id=ORD00039
+175. DATE FORMAT FIXED | order_id=ORD00040 | old=22-10-2025 03:42:50 | new=2025-10-22 03:42:50
+176. MISSING CUSTOMER ID | order_id=ORD00040
+177. DATE FORMAT FIXED | order_id=ORD00041 | old=19-10-2025 12:59:09 | new=2025-10-19 12:59:09
+178. MISSING CUSTOMER ID | order_id=ORD00041
+179. DATE FORMAT FIXED | order_id=ORD00042 | old=25-03-2026 23:44:07 | new=2026-03-25 23:44:07
+180. MISSING CUSTOMER ID | order_id=ORD00042
+181. DATE FORMAT FIXED | order_id=ORD00043 | old=17-12-2025 12:36:26 | new=2025-12-17 12:36:26
+182. MISSING CUSTOMER ID | order_id=ORD00043
+183. DATE FORMAT FIXED | order_id=ORD00044 | old=18-08-2025 01:29:42 | new=2025-08-18 01:29:42
+184. MISSING CUSTOMER ID | order_id=ORD00044
+185. DATE FORMAT FIXED | order_id=ORD00045 | old=22-07-2025 19:46:23 | new=2025-07-22 19:46:23
+186. MISSING CUSTOMER ID | order_id=ORD00045
+187. DATE FORMAT FIXED | order_id=ORD00046 | old=23-09-2025 11:46:00 | new=2025-09-23 11:46:00
+188. MISSING CUSTOMER ID | order_id=ORD00046
+189. DATE FORMAT FIXED | order_id=ORD00047 | old=05-05-2025 23:28:37 | new=2025-05-05 23:28:37
+190. MISSING CUSTOMER ID | order_id=ORD00047
+191. DATE FORMAT FIXED | order_id=ORD00048 | old=14-03-2025 07:35:49 | new=2025-03-14 07:35:49
+192. MISSING CUSTOMER ID | order_id=ORD00048
+193. DATE FORMAT FIXED | order_id=ORD00049 | old=22-04-2026 15:10:00 | new=2026-04-22 15:10:00
+194. MISSING CUSTOMER ID | order_id=ORD00049
+195. DATE FORMAT FIXED | order_id=ORD00050 | old=02-12-2025 00:26:58 | new=2025-12-02 00:26:58
+196. MISSING CUSTOMER ID | order_id=ORD00050
+197. DATE FORMAT FIXED | order_id=ORD00051 | old=04-12-2025 06:04:54 | new=2025-12-04 06:04:54
+198. MISSING CUSTOMER ID | order_id=ORD00051
+199. DATE FORMAT FIXED | order_id=ORD00052 | old=20-03-2025 15:34:56 | new=2025-03-20 15:34:56
+200. MISSING CUSTOMER ID | order_id=ORD00052
+201. DATE FORMAT FIXED | order_id=ORD00053 | old=28-05-2025 13:33:47 | new=2025-05-28 13:33:47
+202. MISSING CUSTOMER ID | order_id=ORD00053
+203. DATE FORMAT FIXED | order_id=ORD00054 | old=15-07-2026 19:45:56 | new=2026-07-15 19:45:56
+204. MISSING CUSTOMER ID | order_id=ORD00054
+205. DATE FORMAT FIXED | order_id=ORD00055 | old=29-05-2026 02:26:14 | new=2026-05-29 02:26:14
+206. MISSING CUSTOMER ID | order_id=ORD00055
+207. DATE FORMAT FIXED | order_id=ORD00056 | old=04-07-2025 12:13:15 | new=2025-07-04 12:13:15
+208. MISSING CUSTOMER ID | order_id=ORD00056
+209. DATE FORMAT FIXED | order_id=ORD00057 | old=02-11-2025 04:13:41 | new=2025-11-02 04:13:41
+210. MISSING CUSTOMER ID | order_id=ORD00057
+211. DATE FORMAT FIXED | order_id=ORD00058 | old=17-01-2026 07:56:21 | new=2026-01-17 07:56:21
+212. MISSING CUSTOMER ID | order_id=ORD00058
+213. DATE FORMAT FIXED | order_id=ORD00059 | old=08-10-2025 06:20:19 | new=2025-10-08 06:20:19
+214. MISSING CUSTOMER ID | order_id=ORD00059
+215. DATE FORMAT FIXED | order_id=ORD00060 | old=10-03-2025 01:30:39 | new=2025-03-10 01:30:39
+216. MISSING CUSTOMER ID | order_id=ORD00060
+217. DATE FORMAT FIXED | order_id=ORD00061 | old=09-01-2026 01:58:13 | new=2026-01-09 01:58:13
+218. MISSING CUSTOMER ID | order_id=ORD00061
+219. DATE FORMAT FIXED | order_id=ORD00062 | old=20-01-2025 23:44:53 | new=2025-01-20 23:44:53
+220. MISSING CUSTOMER ID | order_id=ORD00062
+221. DATE FORMAT FIXED | order_id=ORD00063 | old=11-05-2026 16:44:10 | new=2026-05-11 16:44:10
+222. MISSING CUSTOMER ID | order_id=ORD00063
+223. DATE FORMAT FIXED | order_id=ORD00064 | old=03-01-2026 19:59:48 | new=2026-01-03 19:59:48
+224. MISSING CUSTOMER ID | order_id=ORD00064
+225. DATE FORMAT FIXED | order_id=ORD00065 | old=05-11-2025 17:19:42 | new=2025-11-05 17:19:42
+226. MISSING CUSTOMER ID | order_id=ORD00065
+227. DATE FORMAT FIXED | order_id=ORD00066 | old=29-05-2026 10:40:47 | new=2026-05-29 10:40:47
+228. MISSING CUSTOMER ID | order_id=ORD00066
+229. DATE FORMAT FIXED | order_id=ORD00067 | old=14-05-2026 13:15:23 | new=2026-05-14 13:15:23
+230. MISSING CUSTOMER ID | order_id=ORD00067
+231. DATE FORMAT FIXED | order_id=ORD00068 | old=24-05-2025 14:26:08 | new=2025-05-24 14:26:08
+232. MISSING CUSTOMER ID | order_id=ORD00068
+233. DATE FORMAT FIXED | order_id=ORD00069 | old=14-10-2025 22:08:46 | new=2025-10-14 22:08:46
+234. MISSING CUSTOMER ID | order_id=ORD00069
+235. DATE FORMAT FIXED | order_id=ORD00070 | old=04-02-2025 15:43:11 | new=2025-02-04 15:43:11
+236. MISSING CUSTOMER ID | order_id=ORD00070
+237. DATE FORMAT FIXED | order_id=ORD00071 | old=28-12-2025 05:18:31 | new=2025-12-28 05:18:31
+238. MISSING CUSTOMER ID | order_id=ORD00071
+239. DATE FORMAT FIXED | order_id=ORD00072 | old=28-07-2025 14:21:30 | new=2025-07-28 14:21:30
+240. MISSING CUSTOMER ID | order_id=ORD00072
+241. DATE FORMAT FIXED | order_id=ORD00073 | old=28-04-2025 09:16:47 | new=2025-04-28 09:16:47
+242. MISSING CUSTOMER ID | order_id=ORD00073
+243. DATE FORMAT FIXED | order_id=ORD00074 | old=03-06-2026 23:03:15 | new=2026-06-03 23:03:15
+244. MISSING CUSTOMER ID | order_id=ORD00074
+245. DATE FORMAT FIXED | order_id=ORD00075 | old=18-11-2025 13:16:13 | new=2025-11-18 13:16:13
+246. MISSING CUSTOMER ID | order_id=ORD00075
+247. RETURN ITEM | item_id=ITEM000001 | quantity=-3
+248. RETURN ITEM | item_id=ITEM000002 | quantity=-5
+249. RETURN ITEM | item_id=ITEM000003 | quantity=-1
+250. RETURN ITEM | item_id=ITEM000004 | quantity=-3
+251. RETURN ITEM | item_id=ITEM000005 | quantity=-2
+252. RETURN ITEM | item_id=ITEM000006 | quantity=-3
+253. RETURN ITEM | item_id=ITEM000007 | quantity=-4
+254. RETURN ITEM | item_id=ITEM000008 | quantity=-5
+255. RETURN ITEM | item_id=ITEM000009 | quantity=-2
+256. RETURN ITEM | item_id=ITEM000010 | quantity=-5
+257. RETURN ITEM | item_id=ITEM000011 | quantity=-3
+258. RETURN ITEM | item_id=ITEM000012 | quantity=-4
+259. RETURN ITEM | item_id=ITEM000013 | quantity=-3
+260. RETURN ITEM | item_id=ITEM000014 | quantity=-4
+261. RETURN ITEM | item_id=ITEM000015 | quantity=-4
+262. RETURN ITEM | item_id=ITEM000016 | quantity=-3
+263. RETURN ITEM | item_id=ITEM000017 | quantity=-2
+264. RETURN ITEM | item_id=ITEM000018 | quantity=-4
+265. RETURN ITEM | item_id=ITEM000019 | quantity=-5
+266. RETURN ITEM | item_id=ITEM000020 | quantity=-4
+267. RETURN ITEM | item_id=ITEM000021 | quantity=-5
+268. RETURN ITEM | item_id=ITEM000022 | quantity=-1
+269. RETURN ITEM | item_id=ITEM000023 | quantity=-2
+270. RETURN ITEM | item_id=ITEM000024 | quantity=-1
+271. RETURN ITEM | item_id=ITEM000025 | quantity=-4
+272. RETURN ITEM | item_id=ITEM000026 | quantity=-4
+273. RETURN ITEM | item_id=ITEM000027 | quantity=-2
+274. RETURN ITEM | item_id=ITEM000028 | quantity=-2
+275. RETURN ITEM | item_id=ITEM000029 | quantity=-5
+276. RETURN ITEM | item_id=ITEM000030 | quantity=-2
+277. RETURN ITEM | item_id=ITEM000031 | quantity=-5
+278. RETURN ITEM | item_id=ITEM000032 | quantity=-4
+279. RETURN ITEM | item_id=ITEM000033 | quantity=-3
+280. RETURN ITEM | item_id=ITEM000034 | quantity=-5
+281. RETURN ITEM | item_id=ITEM000035 | quantity=-2
+282. RETURN ITEM | item_id=ITEM000036 | quantity=-2
+283. RETURN ITEM | item_id=ITEM000037 | quantity=-2
+284. RETURN ITEM | item_id=ITEM000038 | quantity=-3
+285. RETURN ITEM | item_id=ITEM000039 | quantity=-4
+286. RETURN ITEM | item_id=ITEM000040 | quantity=-1
+287. RETURN ITEM | item_id=ITEM000041 | quantity=-4
+288. RETURN ITEM | item_id=ITEM000042 | quantity=-1
+289. RETURN ITEM | item_id=ITEM000043 | quantity=-3
+290. RETURN ITEM | item_id=ITEM000044 | quantity=-1
+291. RETURN ITEM | item_id=ITEM000045 | quantity=-4
+292. RETURN ITEM | item_id=ITEM000046 | quantity=-4
+293. RETURN ITEM | item_id=ITEM000047 | quantity=-1
+294. RETURN ITEM | item_id=ITEM000048 | quantity=-4
+295. RETURN ITEM | item_id=ITEM000049 | quantity=-2
+296. RETURN ITEM | item_id=ITEM000050 | quantity=-5
+297. RETURN ITEM | item_id=ITEM000051 | quantity=-1
+298. RETURN ITEM | item_id=ITEM000052 | quantity=-1
+299. RETURN ITEM | item_id=ITEM000053 | quantity=-2
+300. RETURN ITEM | item_id=ITEM000054 | quantity=-3
+301. RETURN ITEM | item_id=ITEM000055 | quantity=-1
+302. RETURN ITEM | item_id=ITEM000056 | quantity=-1
+303. RETURN ITEM | item_id=ITEM000057 | quantity=-5
+304. RETURN ITEM | item_id=ITEM000058 | quantity=-4
+305. RETURN ITEM | item_id=ITEM000059 | quantity=-2
+306. RETURN ITEM | item_id=ITEM000060 | quantity=-2
+307. RETURN ITEM | item_id=ITEM000061 | quantity=-1
+308. RETURN ITEM | item_id=ITEM000062 | quantity=-1
+309. RETURN ITEM | item_id=ITEM000063 | quantity=-3
+310. RETURN ITEM | item_id=ITEM000064 | quantity=-2
+311. RETURN ITEM | item_id=ITEM000065 | quantity=-4
+312. RETURN ITEM | item_id=ITEM000066 | quantity=-4
+313. RETURN ITEM | item_id=ITEM000067 | quantity=-2
+314. RETURN ITEM | item_id=ITEM000068 | quantity=-2
+315. RETURN ITEM | item_id=ITEM000069 | quantity=-1
+316. RETURN ITEM | item_id=ITEM000070 | quantity=-4
+317. RETURN ITEM | item_id=ITEM000071 | quantity=-3
+318. RETURN ITEM | item_id=ITEM000072 | quantity=-4
+319. RETURN ITEM | item_id=ITEM000073 | quantity=-3
+320. RETURN ITEM | item_id=ITEM000074 | quantity=-2
+321. RETURN ITEM | item_id=ITEM000075 | quantity=-4
+322. RETURN ITEM | item_id=ITEM000076 | quantity=-2
+323. RETURN ITEM | item_id=ITEM000077 | quantity=-1
+324. RETURN ITEM | item_id=ITEM000078 | quantity=-5
+325. RETURN ITEM | item_id=ITEM000079 | quantity=-2
+326. RETURN ITEM | item_id=ITEM000080 | quantity=-3
+327. RETURN ITEM | item_id=ITEM000081 | quantity=-4
+328. RETURN ITEM | item_id=ITEM000082 | quantity=-2
+329. RETURN ITEM | item_id=ITEM000083 | quantity=-2
+330. RETURN ITEM | item_id=ITEM000084 | quantity=-4
+331. RETURN ITEM | item_id=ITEM000085 | quantity=-2
+332. RETURN ITEM | item_id=ITEM000086 | quantity=-3
+333. RETURN ITEM | item_id=ITEM000087 | quantity=-1
+334. RETURN ITEM | item_id=ITEM000088 | quantity=-2
+335. RETURN ITEM | item_id=ITEM000089 | quantity=-4
+336. RETURN ITEM | item_id=ITEM000090 | quantity=-4
+337. INVALID EMAIL | customer_id=CUST0001 | email=user1
+338. INVALID EMAIL | customer_id=CUST0002 | email=user2example.com
+339. INVALID EMAIL | customer_id=CUST0003 | email=user3example.com
+340. INVALID EMAIL | customer_id=CUST0004 | email=user4example.com
+341. INVALID EMAIL | customer_id=CUST0005 | email=user5@
+342. INVALID EMAIL | customer_id=CUST0006 | email=user6example.com
+343. INVALID EMAIL | customer_id=CUST0007 | email=user7
+344. INVALID EMAIL | customer_id=CUST0008 | email=user8example.com
+345. INVALID EMAIL | customer_id=CUST0009 | email=user9
+346. INVALID EMAIL | customer_id=CUST0010 | email=@example.com
+347. INVALID EMAIL | customer_id=CUST0011 | email=user11
+348. INVALID EMAIL | customer_id=CUST0012 | email=user12example.com

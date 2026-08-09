@@ -17,7 +17,7 @@ The internship is structured around weekly assessments covering different facets
 | **Week 5** | [Week 5 - Spark fundamentals and Data cleaning pipeline](./week-5%20Spark%20fundamentals%20and%20Data%20cleaning%20pipeline%20using%20DataFrames/) | Completed | PySpark pipeline for data cleaning, transformation, and aggregation on customer sales data. |
 | **Week 6** | [Week 6 - Spark Data Processing & Optimization](./week-6%20spark%20assessment/) | Completed | PySpark architecture, Lazy Evaluation, explicit schema handling, narrow vs. wide transformations, Parquet storage with Predicate Pushdown verification. |
 | **Week 7** | [Week 7 - Delta Lake & SCD](./week-7%20delta-lake-assignment/) | Completed | Implementing slowly changing dimensions (SCD Type 1 and Type 2) using PySpark and Delta Lake tables. |
-| **Week 8** | *To be updated* | Upcoming | Week 8 assessment task. |
+| **Week 8** | [Week 8 - E-Commerce Order Analytics](./week-8%20Mini%20Project-%20E-commerce%20Order%20Analytics/) | Completed | End-to-end Python & SQL analytical system. Mock data generation, pandas cleaning, SQLite DB seeding, window functions, cohort retention, and CLI report. |
 
 ---
 
@@ -139,6 +139,27 @@ The files and weekly assessment directories are structured as follows:
 │   │   ├── scd2/
 │   │   ├── validation/
 │   │   └── final_output/
+│   └── README.md
+│
+├── week-8 Mini Project- E-commerce Order Analytics/
+│   ├── data/
+│   │   ├── raw/
+│   │   └── cleaned/
+│   ├── database/
+│   │   └── ecommerce.db
+│   ├── sql/
+│   │   ├── schema.sql
+│   │   ├── aggregations.sql
+│   │   ├── window_functions.sql
+│   │   └── cohort_analysis.sql
+│   ├── scripts/
+│   │   ├── generate_data.py
+│   │   ├── clean_data.py
+│   │   ├── database.py
+│   │   ├── report_cli.py
+│   │   └── run_*.py
+│   ├── tests/
+│   │   └── test_edge_cases.py
 │   └── README.md
 │
 └── README.md (Root)
