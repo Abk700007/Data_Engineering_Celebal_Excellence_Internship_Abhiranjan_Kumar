@@ -18,6 +18,7 @@ The internship is structured around weekly assessments covering different facets
 | **Week 6** | [Week 6 - Spark Data Processing & Optimization](./week-6%20spark%20assessment/) | Completed | PySpark architecture, Lazy Evaluation, explicit schema handling, narrow vs. wide transformations, Parquet storage with Predicate Pushdown verification. |
 | **Week 7** | [Week 7 - Delta Lake & SCD](./week-7%20delta-lake-assignment/) | Completed | Implementing slowly changing dimensions (SCD Type 1 and Type 2) using PySpark and Delta Lake tables. |
 | **Week 8** | [Week 8 - E-Commerce Order Analytics](./week-8%20Mini%20Project-%20E-commerce%20Order%20Analytics/) | Completed | End-to-end Python & SQL analytical system. Mock data generation, pandas cleaning, SQLite DB seeding, window functions, cohort retention, and CLI report. |
+| **Capstone** | [Capstone Project - Food Delivery Analytics](./Capstone_Project%20-%20Food%20Delivery%20Analytics/) | Completed | Production-grade end-to-end data pipeline using Medallion Architecture (Bronze->Silver->Gold) on Azure/Databricks with Power BI DirectQuery conformed Star Schema. |
 
 ---
 
@@ -160,6 +161,22 @@ The files and weekly assessment directories are structured as follows:
 │   │   └── run_*.py
 │   ├── tests/
 │   │   └── test_edge_cases.py
+│   └── README.md
+│
+├── Capstone_Project - Food Delivery Analytics/
+│   ├── Databricks Notebooks/
+│   │   ├── 01_Bronze_Ingestion.py
+│   │   ├── 02_Silver_Transformation.py
+│   │   └── 03_Gold_Modeling.py
+│   ├── Power BI/
+│   │   ├── screenshots/
+│   │   ├── CEI_Food_Delivery_Analytics_Dashboard.pbix
+│   │   └── README.md
+│   ├── datasets/
+│   │   ├── orders.csv
+│   │   ├── orders_cdc.csv
+│   │   ├── users_scd.csv
+│   │   └── restaurants_scd.csv
 │   └── README.md
 │
 └── README.md (Root)
