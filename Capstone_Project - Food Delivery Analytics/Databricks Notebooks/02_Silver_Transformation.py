@@ -118,3 +118,54 @@ try:
      })
      .whenNotMatchedInsertAll()
      .execute())
+    print("CDC merge completed successfully.")
+except Exception as e:
+    print(f"Silver orders table not found or cannot be loaded: {str(e)}")
+    print("Initializing Silver orders table with overwrite...")
+    (orders_cleaned.write
+     .format("delta")
+     .mode("overwrite")
+     .option("mergeSchema", "true")
+     .save(silver_orders_path))
+    print("Silver orders table initialized successfully.")
+
+# COMMAND ----------
+
+# DBTITLE 1,Define Reusable Dimension Processing Function
+def process_dimension(source_folder_name, target_folder_name):
+    source_path = f"{base_bronze_path.rstrip('/')}/{source_folder_name}"
+    target_path = f"{base_silver_path.rstrip('/')}/{target_folder_name}"
+    
+    print(f"Processing Dimension: {source_path} -> {target_path}...")
+    
+    # 1. Read Bronze dimension table
+    df = spark.read.format("delta").load(source_path)
+    
+    # 2. Standardize string fields
+    df_cleaned = clean_dataframe(df)
+    
+    # 3. Add audit processed timestamp
+    df_with_audit = df_cleaned.withColumn("_processed_at", current_timestamp())
+    
+    # 4. Save to Silver in overwrite mode
+    (df_with_audit.write
+     .format("delta")
+     .mode("overwrite")
+     .save(target_path))
+    
+    print(f"Successfully processed and saved dimension to {target_folder_name}")
+
+# COMMAND ----------
+
+# DBTITLE 1,Standardize Dimensions
+dimensions = [
+    ("users", "users"),
+    ("restaurants", "restaurants")
+]
+
+for src_folder, tgt_folder in dimensions:
+    try:
+        process_dimension(src_folder, tgt_folder)
+    except Exception as e:
+        print(f"❌ Failed: Dimension {src_folder} processing failed. Error: {str(e)}")
+        raise e
