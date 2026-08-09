@@ -78,3 +78,42 @@ def ingest_to_bronze(source_csv_name, target_folder_name):
           .load(source_path))
     
     # Add lineage metadata columns
+    df_with_metadata = (df
+                        .withColumn("_ingestion_timestamp", current_timestamp())
+                        .withColumn("_source_file_name", col("_metadata.file_path")))
+    
+    # Save to Delta format with overwrite mode
+    (df_with_metadata.write
+     .format("delta")
+     .mode("overwrite")
+     .save(target_path))
+    
+    print(f"Successfully Ingested: {source_csv_name} -> {target_folder_name}")
+
+# COMMAND ----------
+
+# DBTITLE 1,Ingestion Loop with Isolation
+sources = [
+    ("orders.csv", "orders"),
+    ("orders_cdc.csv", "orders_cdc"),
+    ("users_scd.csv", "users"),
+    ("restaurants_scd.csv", "restaurants")
+]
+
+for csv_name, folder_name in sources:
+    try:
+        ingest_to_bronze(csv_name, folder_name)
+    except Exception as e:
+        print(f"❌ Failed: Ingesting {csv_name} failed. Error: {str(e)}")
+        print("Continuing with next sources...")
+
+# COMMAND ----------
+
+# DBTITLE 1,Verification
+try:
+    print("Listing bronze folders to confirm successful ingestion:")
+    files = dbutils.fs.ls(base_bronze_path)
+    for f in files:
+        print(f.path)
+except Exception as e:
+    print(f"❌ Verification failed to list directories: {str(e)}")
